@@ -1,0 +1,1760 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Douglas Lima | Especialista em Financiamento de Imóveis — Fortaleza e região</title>
+<meta name="description" content="Corretor especialista em financiamento habitacional: MCMV, médio e alto padrão, com entrada facilitada. Da simulação à entrega das chaves, em Fortaleza e região.">
+<link rel="icon" href="perfil.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy-900:#2A0505;
+    --navy-800:#3D0808;
+    --navy-700:#520C0C;
+    --navy-600:#6B1111;
+    --gold-500:#C9A227;
+    --gold-400:#D9B84A;
+    --gold-300:#E8CE7E;
+    --brown-700:#4A3421;
+    --brown-600:#5C4030;
+    --brown-500:#7A5230;
+    --brown-400:#9a7048;
+    --cream:#F7F3EC;
+    --cream-2:#EFE7DA;
+    --white:#FFFFFF;
+    --text-dark:#2A2118;
+    --text-soft:#5b5346;
+    --radius:16px;
+    --shadow-lg:0 20px 50px -12px rgba(42,5,5,.35);
+    --shadow-md:0 10px 30px -8px rgba(42,5,5,.25);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  [hidden]{display:none !important}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;background:var(--cream);color:var(--text-dark);line-height:1.6;overflow-x:hidden}
+  h1,h2,h3,.serif{font-family:'Playfair Display',Georgia,serif}
+  img{max-width:100%;display:block}
+  a{text-decoration:none;color:inherit}
+  ::selection{background:var(--gold-400);color:var(--navy-900)}
+
+  /* ===== utilities ===== */
+  .container{width:min(1180px,92%);margin:0 auto}
+  .eyebrow{display:inline-flex;align-items:center;gap:.6rem;font-size:.8rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-500)}
+  .eyebrow::before{content:"";width:34px;height:2px;background:var(--gold-500);display:inline-block}
+  .section{padding:96px 0}
+  .section-head{max-width:640px;margin-bottom:56px}
+  .section-head.center{margin-left:auto;margin-right:auto;text-align:center}
+  .section-head.center .eyebrow{justify-content:center}
+  .section-head h2{font-size:clamp(1.9rem,4vw,2.8rem);color:var(--navy-800);margin:.5rem 0 .8rem;line-height:1.15}
+  .section-head p{color:var(--text-soft)}
+  .gold-text{color:var(--gold-500)}
+
+  /* ===== buttons ===== */
+  .btn{display:inline-flex;align-items:center;gap:.6rem;padding:.95rem 1.9rem;border-radius:999px;font-weight:600;font-size:.95rem;cursor:pointer;border:none;transition:.25s ease;font-family:inherit}
+  .btn svg{width:18px;height:18px;flex-shrink:0}
+  .btn-gold{background:linear-gradient(135deg,var(--gold-400),var(--gold-500));color:var(--navy-900);box-shadow:0 8px 24px -6px rgba(201,162,39,.55)}
+  .btn-gold:hover{transform:translateY(-3px);box-shadow:0 14px 30px -6px rgba(201,162,39,.65)}
+  .btn-outline{background:transparent;color:var(--cream);border:1.5px solid rgba(232,206,126,.55)}
+  .btn-outline:hover{background:rgba(232,206,126,.12);border-color:var(--gold-300)}
+  .btn-navy{background:var(--navy-800);color:var(--cream)}
+  .btn-navy:hover{background:var(--navy-600);transform:translateY(-3px)}
+
+  /* ===== nav ===== */
+  header{position:fixed;top:0;left:0;right:0;z-index:100;transition:.35s ease;padding:18px 0}
+  header.scrolled{background:rgba(42,5,5,.92);backdrop-filter:blur(14px);padding:10px 0;box-shadow:0 6px 24px rgba(0,0,0,.35)}
+  nav{display:flex;align-items:center;justify-content:space-between}
+  .logo{display:flex;align-items:center;gap:.75rem}
+  .logo-mark{width:46px;height:46px;border-radius:12px;background:linear-gradient(135deg,var(--gold-400),var(--brown-500));display:grid;place-items:center;font-family:'Playfair Display',serif;font-weight:700;font-size:1.25rem;color:var(--navy-900)}
+  .logo-text{line-height:1.1}
+  .logo-text strong{display:block;font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--cream);letter-spacing:.02em}
+  .logo-text span{font-size:.68rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold-400)}
+  .nav-links{display:flex;gap:2rem;list-style:none}
+  .nav-links a{color:rgba(247,243,236,.85);font-size:.9rem;font-weight:500;position:relative;padding:4px 0;transition:color .2s}
+  .nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--gold-400);transition:.25s}
+  .nav-links a:hover{color:var(--gold-300)}
+  .nav-links a:hover::after{width:100%}
+  .nav-cta{display:flex;align-items:center;gap:1rem}
+  .burger{display:none;background:none;border:none;cursor:pointer;padding:6px}
+  .burger span{display:block;width:24px;height:2px;background:var(--cream);margin:5px 0;transition:.3s;border-radius:2px}
+  .mobile-menu{position:fixed;inset:0 0 0 0;background:rgba(42,5,5,.97);z-index:99;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.6rem;opacity:0;pointer-events:none;transition:.3s}
+  .mobile-menu.open{opacity:1;pointer-events:auto}
+  .mobile-menu a{color:var(--cream);font-family:'Playfair Display',serif;font-size:1.5rem}
+  .mobile-menu a:hover{color:var(--gold-400)}
+
+  /* ===== hero ===== */
+  .hero{position:relative;min-height:100vh;display:flex;align-items:center;background:
+    radial-gradient(1100px 500px at 85% -10%,rgba(201,162,39,.16),transparent 60%),
+    radial-gradient(900px 600px at -10% 110%,rgba(122,82,48,.35),transparent 55%),
+    linear-gradient(160deg,var(--navy-900) 0%,var(--navy-800) 45%,var(--navy-700) 100%);
+    color:var(--cream);padding:140px 0 90px;overflow:hidden}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+  .hero h1{font-size:clamp(2.4rem,5.2vw,4rem);line-height:1.12;margin:1rem 0 1.2rem;font-weight:600}
+  .hero h1 em{font-style:italic;color:var(--gold-400)}
+  .hero p.lead{font-size:1.08rem;color:rgba(247,243,236,.82);max-width:520px;margin-bottom:2.2rem}
+  .hero-ctas{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:3rem}
+  .hero-badges{display:flex;gap:2.2rem;flex-wrap:wrap}
+  .hero-badge{display:flex;align-items:center;gap:.7rem;font-size:.88rem;color:rgba(247,243,236,.85)}
+  .hero-badge .ic{width:40px;height:40px;border-radius:12px;background:rgba(201,162,39,.15);border:1px solid rgba(201,162,39,.35);display:grid;place-items:center;flex-shrink:0}
+  .hero-badge .ic svg{width:19px;height:19px;color:var(--gold-400)}
+  .hero-badge b{display:block;color:var(--cream);font-size:.95rem}
+  .hero-visual{position:relative}
+  .hero-card{position:relative;border-radius:24px;overflow:hidden;box-shadow:var(--shadow-lg);border:1px solid rgba(201,162,39,.3)}
+  .hero-img{width:100%;object-fit:cover;object-position:center 20%;aspect-ratio:4/4.6;background:
+    radial-gradient(400px 300px at 20% 15%,rgba(201,162,39,.35),transparent 60%),
+    radial-gradient(500px 400px at 90% 90%,rgba(122,82,48,.6),transparent 60%),
+    linear-gradient(150deg,var(--brown-700),var(--navy-800) 70%);
+    position:relative}
+  .hero-img::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,transparent 0 22px,rgba(232,206,126,.045) 22px 44px)}
+  .hero-float{position:absolute;background:rgba(42,5,5,.85);backdrop-filter:blur(12px);border:1px solid rgba(201,162,39,.35);border-radius:16px;padding:14px 18px;box-shadow:var(--shadow-md);display:flex;align-items:center;gap:.8rem;animation:floaty 5s ease-in-out infinite}
+  .hero-float .dot{width:10px;height:10px;border-radius:50%;background:#3ddc84;box-shadow:0 0 10px #3ddc84}
+  .hero-float small{display:block;color:rgba(247,243,236,.7);font-size:.7rem}
+  .hero-float b{color:var(--cream);font-size:.9rem}
+  .hf1{top:26px;left:-34px}
+  .hf2{bottom:60px;right:-28px;animation-delay:1.4s}
+  .hf3{bottom:-24px;left:36px;animation-delay:2.6s}
+  @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+  .scroll-hint{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);color:rgba(247,243,236,.6);font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:6px}
+  .scroll-hint::after{content:"";width:1.5px;height:34px;background:linear-gradient(var(--gold-400),transparent);animation:drop 1.8s infinite}
+  @keyframes drop{0%{opacity:0;transform:scaleY(.3)}45%{opacity:1}100%{opacity:0;transform:scaleY(1) translateY(14px)}}
+
+  /* ===== stats strip ===== */
+  .stats{background:linear-gradient(90deg,var(--brown-700),var(--brown-600) 50%,var(--brown-700));padding:34px 0;position:relative;z-index:5}
+  .stats .container{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;text-align:center}
+  .stat b{font-family:'Playfair Display',serif;font-size:2rem;color:var(--gold-300);display:block;line-height:1.1}
+  .stat span{font-size:.82rem;color:rgba(247,243,236,.75);letter-spacing:.06em;text-transform:uppercase}
+
+  /* ===== about ===== */
+  .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center}
+  .about-photo{position:relative}
+  .about-photo .frame{width:100%;object-fit:cover;object-position:center top;border-radius:24px;aspect-ratio:4/4.8;background:
+    radial-gradient(340px 260px at 75% 20%,rgba(201,162,39,.4),transparent 55%),
+    linear-gradient(160deg,var(--navy-700),var(--brown-700));
+    box-shadow:var(--shadow-lg);position:relative;overflow:hidden}
+  .about-photo .frame::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent 0 26px,rgba(247,243,236,.05) 26px 52px)}
+  .about-photo::before{content:"";position:absolute;inset:-18px 18px 18px -18px;border:2px solid var(--gold-500);border-radius:26px;z-index:-1;opacity:.55}
+  .exp-chip{position:absolute;bottom:-26px;right:-14px;background:var(--navy-800);color:var(--cream);border-radius:18px;padding:18px 24px;box-shadow:var(--shadow-lg);border:1px solid rgba(201,162,39,.35);text-align:center}
+  .exp-chip b{font-family:'Playfair Display',serif;font-size:1.9rem;color:var(--gold-400);display:block;line-height:1}
+  .exp-chip span{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(247,243,236,.75)}
+  .about-text h2{font-size:clamp(1.8rem,3.6vw,2.6rem);color:var(--navy-800);margin:.5rem 0 1.1rem;line-height:1.2}
+  .about-text p{color:var(--text-soft);margin-bottom:1rem}
+  .about-list{list-style:none;margin:1.4rem 0 2rem;display:grid;gap:.8rem}
+  .about-list li{display:flex;gap:.8rem;align-items:flex-start;font-weight:500;color:var(--navy-800)}
+  .about-list svg{width:20px;height:20px;color:var(--gold-500);flex-shrink:0;margin-top:3px}
+  .cred-row{display:flex;gap:.8rem;flex-wrap:wrap}
+  .cred{background:var(--white);border:1px solid #e5dccb;border-radius:12px;padding:.55rem 1rem;font-size:.82rem;font-weight:600;color:var(--brown-600);display:inline-flex;gap:.5rem;align-items:center}
+  .cred svg{width:15px;height:15px;color:var(--gold-500)}
+
+  /* ===== properties ===== */
+  .properties{background:linear-gradient(180deg,var(--cream) 0%,var(--cream-2) 100%)}
+  .tabs{display:flex;gap:.7rem;justify-content:center;flex-wrap:wrap;margin-bottom:3rem}
+  .tab{padding:.8rem 1.7rem;border-radius:999px;border:1.5px solid #d8cbb2;background:var(--white);font-family:inherit;font-weight:600;font-size:.9rem;color:var(--text-soft);cursor:pointer;transition:.25s;display:inline-flex;align-items:center;gap:.55rem}
+  .tab svg{width:16px;height:16px}
+  .tab:hover{border-color:var(--gold-500);color:var(--navy-800)}
+  .tab.active{background:linear-gradient(135deg,var(--navy-800),var(--navy-600));color:var(--gold-300);border-color:var(--navy-800);box-shadow:0 10px 24px -8px rgba(61,8,8,.5)}
+  .tab-panel{display:none;animation:fadeUp .45s ease}
+  .tab-panel.active{display:block}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+  .prop-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem}
+  .prop-card{background:var(--white);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-md);transition:.3s ease;display:flex;flex-direction:column;border:1px solid #eee4d3}
+  .prop-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg)}
+  .prop-media{position:relative;aspect-ratio:16/10.5;overflow:hidden}
+  .prop-media .ph{position:absolute;inset:0;display:grid;place-items:center;color:rgba(247,243,236,.9)}
+  .prop-media .ph svg{width:44px;height:44px;opacity:.85}
+  .ph-eco{background:linear-gradient(135deg,#6B1111,var(--navy-800))}
+  .ph-med{background:linear-gradient(135deg,var(--navy-600),var(--brown-600))}
+  .ph-alto{background:linear-gradient(135deg,var(--brown-700),var(--navy-900))}
+  .ph-inv{background:linear-gradient(135deg,var(--brown-500),var(--navy-700))}
+  .prop-tag{position:absolute;top:14px;left:14px;background:linear-gradient(135deg,var(--gold-400),var(--gold-500));color:var(--navy-900);font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.4rem .85rem;border-radius:999px}
+  .prop-tag.blue{background:var(--navy-800);color:var(--gold-300)}
+  .prop-body{padding:1.4rem 1.5rem 1.6rem;display:flex;flex-direction:column;gap:.65rem;flex:1}
+  .prop-loc{font-size:.8rem;color:var(--text-soft);display:flex;align-items:center;gap:.4rem}
+  .prop-loc svg{width:14px;height:14px;color:var(--gold-500)}
+  .prop-body h3{font-size:1.18rem;color:var(--navy-800);line-height:1.3}
+  .prop-specs{display:flex;gap:1rem;font-size:.82rem;color:var(--text-soft);flex-wrap:wrap;padding:.5rem 0;border-top:1px dashed #e2d7c2;border-bottom:1px dashed #e2d7c2}
+  .prop-specs span{display:inline-flex;align-items:center;gap:.35rem}
+  .prop-specs svg{width:15px;height:15px;color:var(--brown-500)}
+  .prop-foot{display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding-top:.4rem}
+  .prop-price{font-family:'Playfair Display',serif;font-weight:700;font-size:1.3rem;color:var(--brown-600)}
+  .prop-price small{font-size:.72rem;font-weight:400;color:var(--text-soft);font-family:'Inter',sans-serif;display:block;letter-spacing:.04em}
+  .link-arrow{font-size:.85rem;font-weight:600;color:var(--navy-700);display:inline-flex;align-items:center;gap:.35rem;transition:.2s}
+  .link-arrow svg{width:15px;height:15px;transition:.2s}
+  .link-arrow:hover{color:var(--gold-500)}
+  .link-arrow:hover svg{transform:translateX(4px)}
+  .tab-note{text-align:center;margin-top:2.6rem;color:var(--text-soft);font-size:.9rem}
+  .tab-note a{color:var(--brown-600);font-weight:600;text-decoration:underline;text-decoration-color:var(--gold-400)}
+
+  /* ===== why ===== */
+  .why{background:var(--navy-900);color:var(--cream);position:relative;overflow:hidden}
+  .why::before{content:"";position:absolute;top:-140px;right:-140px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(201,162,39,.14),transparent 65%)}
+  .why .section-head h2{color:var(--cream)}
+  .why .section-head p{color:rgba(247,243,236,.72)}
+  .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+  .why-card{background:rgba(247,243,236,.045);border:1px solid rgba(201,162,39,.22);border-radius:var(--radius);padding:2rem 1.7rem;transition:.3s}
+  .why-card:hover{background:rgba(201,162,39,.09);transform:translateY(-6px);border-color:rgba(201,162,39,.5)}
+  .why-ic{width:52px;height:52px;border-radius:14px;background:linear-gradient(135deg,var(--gold-400),var(--brown-500));display:grid;place-items:center;margin-bottom:1.2rem;box-shadow:0 8px 20px -6px rgba(201,162,39,.5)}
+  .why-ic svg{width:24px;height:24px;color:var(--navy-900)}
+  .why-card h3{font-size:1.12rem;color:var(--gold-300);margin-bottom:.55rem}
+  .why-card p{font-size:.9rem;color:rgba(247,243,236,.75)}
+
+  /* ===== testimonials ===== */
+  .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+  .testi{background:var(--white);border-radius:var(--radius);padding:2rem 1.8rem;box-shadow:var(--shadow-md);position:relative;border:1px solid #eee4d3;transition:.3s}
+  .testi:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+  .testi::before{content:"“";font-family:'Playfair Display',serif;font-size:5rem;line-height:.6;color:var(--gold-400);position:absolute;top:26px;right:26px;opacity:.55}
+  .stars{color:var(--gold-500);letter-spacing:2px;margin-bottom:.9rem;font-size:1rem}
+  .testi p{font-size:.94rem;color:var(--text-soft);margin-bottom:1.3rem;font-style:italic}
+  .testi-person{display:flex;align-items:center;gap:.9rem}
+  .avatar{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-family:'Playfair Display',serif;color:var(--navy-900);font-size:1rem}
+  .av-1{background:linear-gradient(135deg,var(--gold-300),var(--gold-500))}
+  .av-2{background:linear-gradient(135deg,#a9825e,var(--brown-500))}
+  .av-3{background:linear-gradient(135deg,#7d97b5,var(--navy-600))}
+  .testi-person b{display:block;font-size:.92rem;color:var(--navy-800)}
+  .testi-person span{font-size:.78rem;color:var(--text-soft)}
+  .google-strip{margin-top:3rem;display:flex;align-items:center;justify-content:center;gap:1.4rem;flex-wrap:wrap;background:var(--white);border:1px solid #eee4d3;border-radius:999px;padding:1rem 2rem;box-shadow:var(--shadow-md);width:fit-content;margin-left:auto;margin-right:auto}
+  .google-strip .g{display:flex;align-items:center;gap:.5rem;font-weight:700;color:var(--navy-800)}
+  .g-mark{width:26px;height:26px}
+  .google-strip .score{font-weight:700;color:var(--navy-800)}
+  .google-strip .stars{margin:0}
+  .google-strip small{color:var(--text-soft)}
+
+  /* ===== process ===== */
+  .process{background:var(--cream)}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.3rem;counter-reset:step}
+  .step{background:var(--white);border:1px solid #eee4d3;border-radius:var(--radius);padding:1.9rem 1.5rem;position:relative;transition:.3s}
+  .step:hover{transform:translateY(-6px);box-shadow:var(--shadow-md)}
+  .step-num{counter-increment:step;font-family:'Playfair Display',serif;font-size:2.6rem;color:transparent;-webkit-text-stroke:1.5px var(--gold-500);line-height:1;margin-bottom:.9rem}
+  .step-num::before{content:"0" counter(step)}
+  .step h3{font-size:1.05rem;color:var(--navy-800);margin-bottom:.5rem}
+  .step p{font-size:.88rem;color:var(--text-soft)}
+  .step::after{content:"→";position:absolute;top:2rem;right:-0.85rem;color:var(--gold-500);font-size:1.2rem;z-index:2}
+  .step:last-child::after{display:none}
+
+  /* ===== cta / contact ===== */
+  .contact{background:
+    radial-gradient(700px 400px at 90% 10%,rgba(201,162,39,.15),transparent 60%),
+    linear-gradient(150deg,var(--navy-900),var(--navy-800) 60%,var(--navy-700));
+    color:var(--cream)}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+  .contact h2{font-size:clamp(1.9rem,4vw,2.7rem);color:var(--cream);margin:.5rem 0 1rem;line-height:1.18}
+  .contact h2 em{color:var(--gold-400);font-style:italic}
+  .contact-left p{color:rgba(247,243,236,.8);margin-bottom:1.8rem;max-width:460px}
+  .contact-lines{display:grid;gap:1rem;margin-bottom:2rem}
+  .c-line{display:flex;gap:.9rem;align-items:center}
+  .c-line .ic{width:44px;height:44px;border-radius:12px;background:rgba(201,162,39,.14);border:1px solid rgba(201,162,39,.35);display:grid;place-items:center;flex-shrink:0}
+  .c-line .ic svg{width:19px;height:19px;color:var(--gold-400)}
+  .c-line small{display:block;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(247,243,236,.6)}
+  .c-line b{color:var(--cream);font-weight:600}
+  .form-card{background:var(--white);border-radius:20px;padding:2.2rem;box-shadow:var(--shadow-lg);color:var(--text-dark)}
+  .form-card h3{color:var(--navy-800);font-size:1.35rem;margin-bottom:.4rem}
+  .form-card>p{font-size:.88rem;color:var(--text-soft);margin-bottom:1.5rem}
+  .field{margin-bottom:1.1rem}
+  .field label{display:block;font-size:.8rem;font-weight:600;color:var(--navy-800);margin-bottom:.4rem;letter-spacing:.03em}
+  .field input,.field select,.field textarea{width:100%;padding:.85rem 1rem;border:1.5px solid #ddd2bd;border-radius:12px;font-family:inherit;font-size:.92rem;background:var(--cream);transition:.2s;color:var(--text-dark)}
+  .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--gold-500);background:#fff;box-shadow:0 0 0 4px rgba(201,162,39,.15)}
+  .field-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+  .form-card .btn{width:100%;justify-content:center;margin-top:.4rem}
+  .form-note{font-size:.74rem;color:var(--text-soft);text-align:center;margin-top:.9rem}
+  /* ===== perfil financeiro do lead ===== */
+  #formPerfil{position:relative}
+  .fslide-out{animation:fvOut .32s ease forwards}
+  .fslide-in{animation:fvIn .55s cubic-bezier(.2,.8,.25,1) forwards}
+  @keyframes fvOut{to{opacity:0;transform:translateX(-30px) scale(.97)}}
+  @keyframes fvIn{from{opacity:0;transform:translateX(36px) scale(.96)}to{opacity:1;transform:none}}
+  .perfil-btn{width:100%;padding:.85rem 1rem;border-radius:12px;border:1.5px dashed var(--gold-500);background:rgba(201,162,39,.08);color:var(--brown-600);font-family:inherit;font-weight:600;font-size:.9rem;cursor:pointer;transition:.25s}
+  .perfil-btn:hover{background:rgba(201,162,39,.18);transform:translateY(-1px)}
+  .perfil-btn.done{border-style:solid;background:rgba(46,125,80,.1);color:#2e7d32}
+  .pf-intro{font-size:.85rem;color:var(--text-soft);margin-bottom:1rem}
+  .pf-opts{display:flex;gap:.5rem;flex-wrap:wrap}
+  .pf-opt{position:relative}
+  .pf-opt input{position:absolute;opacity:0;pointer-events:none}
+  .pf-opt span{display:inline-block;padding:.5rem .95rem;border:1.5px solid #ddd2bd;border-radius:999px;font-size:.85rem;font-weight:600;cursor:pointer;color:var(--text-soft);transition:.2s;background:var(--cream)}
+  .pf-opt input:checked + span{background:linear-gradient(135deg,var(--navy-800),var(--navy-600));color:var(--gold-300);border-color:var(--navy-800)}
+  .pf-save{display:block;margin-left:auto;background:linear-gradient(135deg,var(--gold-400),var(--gold-500));color:var(--navy-900);border:none;border-radius:999px;padding:.7rem 1.7rem;font-weight:700;font-family:inherit;cursor:pointer;transition:.25s}
+  .pf-save:disabled{opacity:.45;cursor:not-allowed}
+  .pf-save:not(:disabled):hover{transform:translateY(-2px);box-shadow:0 8px 20px -6px rgba(201,162,39,.55)}
+  .pf-confirm{position:absolute;inset:-8px;background:rgba(247,243,236,.96);border-radius:20px;display:flex;align-items:center;justify-content:center;z-index:5;animation:fvIn .4s ease}
+  .pf-confirm-box{text-align:center;padding:1rem}
+  .pf-confirm-box b{font-family:'Playfair Display',serif;color:var(--navy-800);font-size:1.15rem;display:block;margin-bottom:.3rem}
+  .pf-confirm-box p{font-size:.85rem;color:var(--text-soft);margin-bottom:1.1rem}
+  .pf-confirm-btns{display:flex;gap:.7rem;justify-content:center}
+  @keyframes goldGlow{0%,100%{box-shadow:0 0 0 0 rgba(201,162,39,.30)}50%{box-shadow:0 0 26px 6px rgba(201,162,39,.55)}}
+  .btn.glow{animation:goldGlow 2.4s ease-in-out infinite;border-color:var(--gold-400)}
+
+  /* ===== footer ===== */
+  footer{background:var(--navy-900);color:rgba(247,243,236,.7);padding:64px 0 28px}
+  .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:3rem;margin-bottom:2.6rem}
+  footer h4{color:var(--cream);font-size:.95rem;margin-bottom:1.1rem;letter-spacing:.06em;text-transform:uppercase;font-family:'Inter',sans-serif;font-weight:600}
+  footer p{font-size:.88rem}
+  .footer-links{list-style:none;display:grid;gap:.6rem}
+  .footer-links a{font-size:.88rem;transition:.2s}
+  .footer-links a:hover{color:var(--gold-400)}
+  .socials{display:flex;gap:.8rem;margin-top:1.2rem}
+  .soc{width:40px;height:40px;border-radius:12px;border:1px solid rgba(201,162,39,.35);display:grid;place-items:center;transition:.25s}
+  .soc svg{width:18px;height:18px;color:var(--gold-400)}
+  .soc:hover{background:var(--gold-500)}
+  .soc:hover svg{color:var(--navy-900)}
+  .footer-bottom{border-top:1px solid rgba(247,243,236,.12);padding-top:1.6rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-size:.78rem}
+  .footer-bottom span{color:rgba(247,243,236,.5)}
+
+  /* ===== whatsapp fab ===== */
+  .wa-fab{position:fixed;bottom:26px;right:26px;z-index:90;width:60px;height:60px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 12px 30px -6px rgba(37,211,102,.55);transition:.25s;animation:pulse 2.4s infinite}
+  .wa-fab:hover{transform:scale(1.08)}
+  .wa-fab svg{width:30px;height:30px;color:#fff}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.45)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+
+  /* ===== reveal on scroll ===== */
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  /* ===== gestao de imoveis / instagram ===== */
+  .manage-bar{display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap;margin-bottom:1.8rem}
+  .manage-hint{font-size:.8rem;color:var(--text-soft);max-width:430px}
+  .manage-card{max-width:760px;margin:0 auto 2.8rem}
+  .empty-state{display:flex;flex-direction:column;align-items:center;gap:.5rem;text-align:center;padding:64px 24px;background:var(--white);border:2px dashed #d8cbb2;border-radius:var(--radius);color:var(--text-soft)}
+  .empty-state b{color:var(--navy-800);font-size:1.05rem}
+  .empty-state span{max-width:440px;font-size:.9rem}
+  .prop-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .video-badge{position:absolute;bottom:12px;right:12px;background:rgba(42,5,5,.85);color:var(--gold-300);font-size:.78rem;font-weight:600;padding:.45rem .95rem;border-radius:999px;border:1px solid rgba(201,162,39,.4);z-index:2}
+  .video-badge:hover{background:var(--gold-500);color:var(--navy-900)}
+  .prop-desc{font-size:.85rem;color:var(--text-soft)}
+
+  .field-row.three{grid-template-columns:repeat(3,1fr)}
+  .thumb{position:relative;width:74px;height:74px;border-radius:10px;overflow:hidden;border:2px solid #ddd2bd;background:var(--navy-800);display:grid;place-items:center}
+  .thumb img{width:100%;height:100%;object-fit:cover}
+  .thumb .tplay{color:#fff;font-size:1.2rem}
+  .thumb .tbar{position:absolute;bottom:0;left:0;right:0;display:flex;justify-content:center;gap:.25rem;padding:2px;background:rgba(42,5,5,.55)}
+  .thumb .tbtn{border:none;background:rgba(255,255,255,.25);color:#fff;border-radius:6px;font-size:.72rem;cursor:pointer;padding:2px 6px;line-height:1}
+  .thumb .tbtn.star.on{background:var(--gold-500);color:var(--navy-900)}
+  .thumb.is-cover{border-color:var(--gold-500)}
+  .photo-count{position:absolute;top:14px;right:14px;background:rgba(42,5,5,.85);color:var(--gold-300);font-size:.74rem;font-weight:600;padding:.35rem .7rem;border-radius:999px;border:1px solid rgba(201,162,39,.4);z-index:2}
+  .prop-media video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#000}
+  .prop-del{position:absolute;top:12px;right:12px;z-index:3;background:rgba(42,5,5,.85);border:1px solid rgba(192,57,43,.65);color:#ffb3a7;border-radius:999px;padding:.35rem .8rem;font-size:.72rem;font-weight:600;cursor:pointer;font-family:inherit}
+  .prop-del:hover{background:#c0392b;border-color:#c0392b;color:#fff}
+  .insta-card{display:block;position:relative;border-radius:20px;overflow:hidden;box-shadow:var(--shadow-lg);max-width:400px;margin:0 auto;border:1px solid #eee4d3;transition:.3s}
+  .insta-card:hover{transform:translateY(-5px)}
+  .insta-card img{width:100%;display:block}
+  .insta-overlay{position:absolute;inset:auto 0 0 0;padding:64px 24px 22px;background:linear-gradient(transparent,rgba(42,5,5,.88));display:flex;flex-direction:column;align-items:center;color:var(--cream);gap:.15rem;text-align:center}
+  .insta-overlay b{font-family:'Playfair Display',serif;font-size:1.3rem}
+  .insta-overlay small{color:var(--gold-300);letter-spacing:.08em}
+  /* ===== sonhos realizados / mural de agradecimentos ===== */
+  .dreams{background:linear-gradient(180deg,var(--cream-2),var(--cream))}
+  .marquee{overflow:hidden;padding:6px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+  .marquee-track{display:flex;gap:1.3rem;width:max-content;animation:scrollx 38s linear infinite}
+  .marquee:hover .marquee-track{animation-play-state:paused}
+  @keyframes scrollx{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  .dream-card{position:relative;border-radius:18px;overflow:hidden;box-shadow:var(--shadow-md);border:1px solid #eee4d3;flex-shrink:0}
+  .dream-card img{width:260px;height:330px;object-fit:cover;display:block;transition:.4s}
+  .dream-card:hover img{transform:scale(1.05)}
+  .dream-cap{position:absolute;inset:auto 0 0 0;padding:42px 16px 14px;background:linear-gradient(transparent,rgba(42,5,5,.88));color:var(--cream);font-size:.85rem;font-weight:600;letter-spacing:.02em}
+  .logo-photo{background:url(perfil.jpg) no-repeat;background-size:120%;background-position:50% 18%;border-radius:12px}
+  .mural-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem}
+  .chat-card{background:#efeae2;border-radius:18px;overflow:hidden;box-shadow:var(--shadow-md);border:1px solid #ddd3c5;display:flex;flex-direction:column;transition:.3s}
+  .chat-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg)}
+  .chat-head{background:#008069;color:#fff;display:flex;align-items:center;gap:.7rem;padding:.65rem .9rem}
+  .chat-arrow{font-size:1.15rem;line-height:1;opacity:.9}
+  .chat-av{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-weight:600;color:#fff;font-size:.85rem;flex-shrink:0}
+  .ca-1{background:#7f8c9b}.ca-2{background:#a3724f}.ca-3{background:#6a8d5f}.ca-4{background:#7d6bb0}.ca-5{background:#b06b6b}.ca-6{background:#4f8ea3}
+  .chat-head b{font-size:.9rem;display:block;line-height:1.2}
+  .chat-head small{font-size:.68rem;color:rgba(255,255,255,.78)}
+  .chat-body{flex:1;display:flex;flex-direction:column;gap:.5rem;padding:1.1rem .9rem}
+  .chat-date{align-self:center;background:#fdf3d8;color:#54656f;font-size:.66rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .8rem;border-radius:8px;box-shadow:0 1px 1px rgba(11,20,26,.12)}
+  .bubble{background:#fff;color:#111b21;border-radius:12px 12px 12px 3px;padding:.55rem .7rem .55rem .8rem;font-size:.86rem;line-height:1.45;max-width:92%;align-self:flex-start;box-shadow:0 1px 1px rgba(11,20,26,.13)}
+  .bubble.reply{background:#d9fdd3;border-radius:12px 12px 3px 12px;align-self:flex-end}
+  .bubble .meta{float:right;display:inline-flex;align-items:center;gap:2px;margin:.4rem 0 0 .7rem;font-size:.64rem;color:#667781;user-select:none}
+  .bubble .tick{color:#53bdeb;letter-spacing:-1px}
+  @media(max-width:900px){.mural-grid{grid-template-columns:1fr}}
+  /* ===== conquistas ===== */
+  .conquistas{background:linear-gradient(180deg,var(--cream-2),var(--cream))}
+  .ach-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-bottom:2.6rem}
+  .ach-stat{background:var(--white);border:1px solid #e5dccb;border-radius:14px;padding:1.1rem 1.2rem;box-shadow:var(--shadow-md);transition:.3s}
+
+  /* ===== experiências (vídeo) ===== */
+  .exp{background:radial-gradient(700px 380px at 80% 0%,rgba(201,162,39,.14),transparent 62%),linear-gradient(165deg,var(--navy-800),var(--navy-900) 55%,var(--navy-700));color:var(--cream);position:relative;overflow:hidden}
+  .exp::before{content:"";position:absolute;top:-160px;left:-140px;width:440px;height:440px;border-radius:50%;background:radial-gradient(circle,rgba(201,162,39,.13),transparent 65%)}
+  .exp .section-head h2{color:var(--cream)}
+  .exp .section-head p{color:rgba(247,243,236,.74)}
+  .exp-stage{display:flex;justify-content:center}
+  .exp-frame{position:relative;width:min(380px,100%);border-radius:26px;overflow:hidden;border:1px solid rgba(201,162,39,.35);box-shadow:var(--shadow-lg);background:#000}
+  .exp-video{width:100%;aspect-ratio:464/832;object-fit:cover;display:block;background:#000}
+  .exp-play{position:absolute;inset:0;width:100%;height:100%;border:0;padding:0;cursor:pointer;background:linear-gradient(transparent 35%,rgba(10,4,4,.72));display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;transition:opacity .35s ease}
+  .exp-play .play-btn{width:78px;height:78px;border-radius:50%;background:linear-gradient(135deg,var(--gold-400),var(--brown-500));display:grid;place-items:center;box-shadow:0 14px 34px -10px rgba(0,0,0,.75),0 0 0 10px rgba(201,162,39,.16);transition:transform .25s ease;animation:goldGlow 3s ease-in-out infinite}
+  .exp-play .play-btn svg{width:30px;height:30px;color:var(--navy-900);margin-left:4px}
+  .exp-play span{font-size:.8rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--cream);text-shadow:0 2px 10px rgba(0,0,0,.8)}
+  .exp-play:hover .play-btn{transform:scale(1.06)}
+  [data-video-card].is-playing .exp-play{opacity:0;visibility:hidden;pointer-events:none}
+  .exp-note{margin-top:1.6rem;text-align:center;font-size:.9rem;color:rgba(247,243,236,.66)}
+  @media(max-width:720px){.exp-frame{width:min(320px,100%)}.exp-play .play-btn{width:66px;height:66px}}
+
+  /* ===== visitas realizadas ===== */
+  .visitas{background:linear-gradient(180deg,var(--cream),var(--cream-2))}
+  .vid-grid{display:grid;grid-template-columns:auto minmax(0,1fr);gap:2rem;align-items:start;justify-content:center}
+  .vid-item{display:flex;flex-direction:column;width:100%;align-items:center}
+  .vid-frame{position:relative;border-radius:24px;overflow:hidden;border:1px solid rgba(201,162,39,.35);box-shadow:var(--shadow-lg);background:#000}
+  .vid-frame video{width:100%;height:100%;object-fit:cover;display:block;background:#000}
+  .vid-portrait{width:min(330px,100%);aspect-ratio:464/832}
+  .vid-wide{width:100%;max-width:720px;aspect-ratio:1024/576}
+  .visita-cap{margin-top:.9rem;font-size:.86rem;color:var(--text-soft);text-align:center;max-width:420px}
+  .visitas .exp-play .play-btn{width:70px;height:70px}
+  @media(max-width:900px){.vid-grid{grid-template-columns:1fr;justify-items:center}.vid-wide{max-width:100%}}
+
+  .ach-stat:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+  .ach-stat b{display:block;font-family:'Playfair Display',serif;font-size:1.25rem;color:var(--brown-600);margin-bottom:.15rem}
+  .ach-stat span{font-size:.78rem;color:var(--text-soft);line-height:1.4;display:block}
+  .ach-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.3rem}
+  .ach-card{position:relative;grid-column:span 1;border-radius:18px;overflow:hidden;box-shadow:var(--shadow-md);border:1px solid #eee4d3;background:var(--white)}
+  .ach-card img{width:100%;aspect-ratio:3/3.6;object-fit:cover;object-position:center top;display:block;transition:.4s}
+  .ach-card:hover img{transform:scale(1.04)}
+  .ach-cap{position:absolute;inset:auto 0 0 0;padding:46px 14px 13px;background:linear-gradient(transparent,rgba(42,5,5,.9));color:var(--cream);font-size:.85rem;font-weight:600;text-align:center;line-height:1.35}
+  .ach-card.banner{grid-column:1/-1}
+  .ach-card.banner img{aspect-ratio:16/9;object-position:center}
+  .ach-card.slide{background:#0a0606;display:flex;flex-direction:column;align-self:center;justify-content:flex-start}
+  .ach-card.slide img{aspect-ratio:auto;object-fit:contain;width:100%;height:auto;margin:0 auto;background:#0a0606}
+  .ach-card.slide:hover img{transform:none}
+  .ach-card.slide .ach-cap{position:static;background:none;padding:12px 16px 16px;font-size:.88rem}
+  .ach-sub{margin:2.6rem 0 1.1rem;font-size:.78rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-500);display:flex;align-items:center;gap:.7rem}
+  .ach-sub::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,rgba(201,162,39,.5),transparent)}
+  .ach-slides{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+  .ach-slide{background:#0a0606;border:1px solid #2b1414;border-radius:16px;overflow:hidden;box-shadow:var(--shadow-md);display:flex;flex-direction:column;transition:.3s}
+  .ach-slide:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+  .ach-slide img{width:100%;display:block;background:#0a0606}
+  .ach-slide .ach-cap{position:static;background:none;padding:10px 12px 14px;font-size:.78rem;color:rgba(247,243,236,.9)}
+  @media(max-width:1024px){.ach-grid{grid-template-columns:repeat(2,1fr)}.ach-card{grid-column:span 1}.ach-card.banner{grid-column:1/-1}.ach-stats{grid-template-columns:repeat(2,1fr)}.ach-slides{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:720px){.ach-grid{grid-template-columns:1fr}.ach-card{grid-column:1/-1}.ach-stats{grid-template-columns:1fr 1fr}.ach-slides{grid-template-columns:1fr}}
+  /* ===== responsive ===== */
+  @media(max-width:1024px){
+    .hero-grid{grid-template-columns:1fr;gap:48px}
+    .hero-visual{max-width:480px}
+    .prop-grid,.testi-grid,.why-grid{grid-template-columns:repeat(2,1fr)}
+    .steps{grid-template-columns:repeat(2,1fr)}
+    .step::after{display:none}
+    .about-grid,.contact-grid{grid-template-columns:1fr;gap:48px}
+    .footer-grid{grid-template-columns:1fr 1fr}
+  }
+  @media(max-width:720px){
+    .nav-links{display:none}
+    .nav-cta .btn{display:none}
+    .burger{display:block}
+    .section{padding:70px 0}
+    .stats .container{grid-template-columns:repeat(2,1fr);gap:1.4rem}
+    .prop-grid,.testi-grid,.why-grid,.steps{grid-template-columns:1fr}
+    .hero{padding:120px 0 80px}
+    .hf1{left:-8px}.hf2{right:-6px}
+    .footer-grid{grid-template-columns:1fr}
+    .field-row{grid-template-columns:1fr}
+    .google-strip{flex-direction:column;border-radius:20px;text-align:center;gap:.6rem}
+  }
+</style>
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header id="topbar">
+  <div class="container">
+    <nav>
+      <a href="#inicio" class="logo">
+        <div class="logo-mark logo-photo" role="img" aria-label="Foto de Douglas Lima"></div>
+        <div class="logo-text">
+          <strong>Douglas Lima</strong>
+          <span>Corretor de Imóveis</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#imoveis">Imóveis</a></li>
+        <li><a href="#conquistas">Conquistas</a></li>
+        <li><a href="#experiencias">Experiências</a></li>
+        <li><a href="#visitas">Visitas</a></li>
+        <li><a href="#sonhos">Momentos</a></li>
+        <li><a href="#agradecimentos">Mural</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a class="btn btn-gold" href="#contato">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.34 1.78.66 2.62a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.46-1.23a2 2 0 0 1 2.11-.45c.84.32 1.72.54 2.62.66A2 2 0 0 1 22 16.92z"/></svg>
+          Fale Comigo
+        </a>
+        <button class="burger" id="burger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#inicio">Início</a>
+  <a href="#sobre">Sobre</a>
+  <a href="#imoveis">Imóveis</a>
+  <a href="#conquistas">Conquistas</a>
+  <a href="#experiencias">Experiências</a>
+  <a href="#visitas">Visitas</a>
+  <a href="#sonhos">Momentos</a>
+  <a href="#agradecimentos">Mural</a>
+  <a href="#contato">Contato</a>
+</div>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="inicio">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">Especialista em Financiamento · Fortaleza e região</span>
+        <h1>Seu financiamento aprovado,<br>sua casa <em>conquistada</em>.</h1>
+        <p class="lead">MCMV, médio e alto padrão, com entrada facilitada. Da simulação à entrega das chaves, eu conduzo cada etapa com disciplina, foco e resultados.</p>
+        <div class="hero-ctas">
+          <a href="#imoveis" class="btn btn-gold">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
+            Ver Imóveis Disponíveis
+          </a>
+          <a href="#contato" class="btn btn-outline">Agendar uma conversa</a>
+        </div>
+        <div class="hero-badges">
+          <div class="hero-badge">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+            <div><b>Entrada facilitada</b>Condições que cabem no bolso</div>
+          </div>
+          <div class="hero-badge">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></div>
+            <div><b>MCMV · Médio · Alto</b>O programa certo para o seu perfil</div>
+          </div>
+          <div class="hero-badge">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></div>
+            <div><b>Acompanhamento</b>Da simulação à chave, junto de você</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="hero-card">
+          <img class="hero-img" src="hero.jpg" alt="Douglas Lima em sua mesa de trabalho, cercado pelas placas de premiação da Conceito Imobiliária">
+        </div>
+        <div class="hero-float hf1"><span class="dot"></span><div><small>Disponível agora</small><b>Novas opções hoje</b></div></div>
+        <div class="hero-float hf2"><div><small>Simulação gratuita</small><b>Descubra sua entrada</b></div></div>
+        <a class="hero-float hf3" href="#agradecimentos">
+          <div style="font-size:1.3rem">💬</div>
+          <div><small>Mural de agradecimentos</small><b>Veja as conversas</b></div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint">Explore</div>
+</section>
+
+<!-- ================= STATS ================= -->
+<div class="stats">
+  <div class="container">
+    <div class="stat"><b>📍</b><span>Fortaleza e região metropolitana</span></div>
+    <div class="stat"><b>29262</b><span>CRECI-CE · ativo</span></div>
+    <div class="stat"><b>52,9 mil</b><span>Seguidores no Instagram</span></div>
+    <div class="stat"><b>4</b><span>Perfis de imóveis</span></div>
+  </div>
+</div>
+
+<!-- ================= SONHOS REALIZADOS ================= -->
+<section class="section dreams" id="sonhos">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Momentos que falam por nós</span>
+      <h2>Sonhos <span class="gold-text">realizados</span> 🔑</h2>
+      <p>Cada chave entregue é uma família realizada. Sinta a energia desse trabalho.</p>
+    </div>
+  </div>
+  <div class="marquee reveal">
+    <div class="marquee-track">
+        <div class="dream-card"><img src="sonho-1.jpg" alt="Casal comemorando sonho realizado com a chave da Conceito Imobiliária"><div class="dream-cap">Sonho realizado 🔑</div></div>
+        <div class="dream-card"><img src="sonho-2.jpg" alt="Clientes com a chave Direcional entregue pelo Douglas Lima"><div class="dream-cap">Chave entregue 🏡</div></div>
+        <div class="dream-card"><img src="sonho-3.jpg" alt="Cliente com a chave Victa e o Douglas Lima na Conceito Imobiliária"><div class="dream-cap">Família realizada 💛</div></div>
+        <div class="dream-card"><img src="sonho-4.jpg" alt="Clientes com a chave Tenda e o Douglas Lima na Conceito Imobiliária"><div class="dream-cap">Sonho realizado 🔑</div></div>
+        <div class="dream-card"><img src="sonho-5.jpg" alt="Família com a chave Victa e o Douglas Lima na Conceito Imobiliária"><div class="dream-cap">Chave entregue 🏡</div></div>
+        <div class="dream-card"><img src="sonho-6.jpg" alt="Casal com a chave Tenda e o Douglas Lima na Conceito Imobiliária"><div class="dream-cap">Família realizada 💛</div></div>
+        <div class="dream-card" aria-hidden="true"><img src="sonho-1.jpg" alt=""><div class="dream-cap">Sonho realizado 🔑</div></div>
+        <div class="dream-card" aria-hidden="true"><img src="sonho-2.jpg" alt=""><div class="dream-cap">Chave entregue 🏡</div></div>
+        <div class="dream-card" aria-hidden="true"><img src="sonho-3.jpg" alt=""><div class="dream-cap">Família realizada 💛</div></div>
+        <div class="dream-card" aria-hidden="true"><img src="sonho-4.jpg" alt=""><div class="dream-cap">Sonho realizado 🔑</div></div>
+        <div class="dream-card" aria-hidden="true"><img src="sonho-5.jpg" alt=""><div class="dream-cap">Chave entregue 🏡</div></div>
+        <div class="dream-card" aria-hidden="true"><img src="sonho-6.jpg" alt=""><div class="dream-cap">Família realizada 💛</div></div>
+            </div>
+  </div>
+</section>
+
+<!-- ================= SOBRE ================= -->
+<section class="section" id="sobre">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-photo reveal">
+        <img class="frame" src="sobre.jpg" alt="Douglas Lima comemorando premiação da Conceito Imobiliária">
+        <div class="exp-chip"><b>CRECI-CE</b><span>29262 · ativo</span></div>
+      </div>
+      <div class="about-text reveal">
+        <span class="eyebrow">Quem vai te acompanhar</span>
+        <h2>Muito prazer, eu sou o <span class="gold-text">Douglas</span> — e seu financiamento é o meu trabalho.</h2>
+        <p>🏡 Ajudo famílias de <b>Fortaleza e região metropolitana</b> a conquistar o imóvel próprio com financiamento habitacional: <b>MCMV, médio e alto padrão</b>, com entrada facilitada e aprovação guiada do início ao fim. Sei que um imóvel é muito mais do que um contrato — é onde sua família vai crescer, é a realização de anos de esforço.</p>
+        <p style="font-style:italic;font-weight:500;color:var(--brown-600)">“Disciplina, foco e grandes resultados.” 🏆</p>
+        <ul class="about-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Análise de crédito personalizada: simulo seu financiamento e encontro a faixa ideal para o seu perfil</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Entrada facilitada: apresento as opções que cabem no seu bolso hoje</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Análise completa de documentação e concorrência antes de toda proposta</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Suporte pós-venda: da aprovação à mudança, continuo à disposição</li>
+        </ul>
+        <div class="cred-row">
+          <span class="cred"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>CRECI-CE 29262</span>
+          <span class="cred"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Fortaleza e região metropolitana</span>
+          <span class="cred"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>MCMV · Médio · Alto padrão</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= IMÓVEIS ================= -->
+<section class="section properties" id="imoveis">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Economia · Médio · Alto · Investimento</span>
+      <h2>Imóveis para <span class="gold-text">cada perfil</span> de financiamento</h2>
+      <p>Do MCMV ao alto padrão: escolha a faixa que combina com você e explore as opções cuidadosamente selecionadas.</p>
+    </div>
+
+    <div class="tabs reveal" role="tablist">
+      <button class="tab active" data-tab="economia" role="tab">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+Economia / MCMV
+      </button>
+      <button class="tab" data-tab="medio" role="tab">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+        Médio Padrão
+      </button>
+      <button class="tab" data-tab="alto" role="tab">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20h20M5 20V8l7-5 7 5v12M9 20v-6h6v6"/></svg>
+        Alto Padrão
+      </button>
+      <button class="tab" data-tab="investimento" role="tab">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+        Investimento
+      </button>
+    </div>
+
+<!-- Painel de gestão — uso do corretor -->
+    <div class="manage-bar" id="manageBar" hidden>
+      <button class="btn btn-gold" id="toggleManage" type="button">＋ Adicionar imóvel</button>
+      <button class="btn btn-navy" id="adminExit" type="button" style="padding:.6rem 1.2rem">🔒 Sair do painel</button>
+      <span class="manage-hint">Painel do corretor — salve o imóvel e publique para todo mundo com 1 clique no GitHub. Grátis, sem token, sem copiar código.</span>
+    </div>
+    <div class="form-card manage-card" id="manageCard" hidden>
+      <h3>Adicionar novo imóvel</h3>
+      <p>Preencha os dados, marque a capa com a ⭐ e clique em <b>Publicar</b>. Depois é só clicar em <b>Abrir GitHub</b> e confirmar o <b>Commit changes</b> — em ~1 minuto aparece para todo mundo.</p>
+      <form id="propForm">
+        <div class="field-row">
+          <div class="field">
+            <label for="pTitle">Título do imóvel *</label>
+            <input type="text" id="pTitle" placeholder="Ex.: Casa 3 quartos com piscina" required>
+          </div>
+          <div class="field">
+            <label for="pCat">Aba (categoria) *</label>
+            <select id="pCat" required>
+              <option value="economia">Economia</option>
+              <option value="medio">Médio Padrão</option>
+              <option value="alto">Alto Padrão</option>
+              <option value="investimento">Investimento</option>
+            </select>
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="pLoc">Localização</label>
+            <input type="text" id="pLoc" placeholder="Ex.: Bairro Montese · Fortaleza/CE">
+          </div>
+          <div class="field" id="fieldRenda">
+            <label for="pRenda">Renda</label>
+            <input type="text" id="pRenda" placeholder="Ex.: R$ 1.200/mês · R$ 3.500/ano">
+          </div>
+        </div>
+        <div class="field-row" id="fieldPreco" hidden>
+          <div class="field">
+            <label for="pPreco">Preço (opcional)</label>
+            <input type="text" id="pPreco" placeholder="Ex.: R$ 450.000">
+          </div>
+        </div>
+        <div class="field">
+          <label for="pVideo">Link do vídeo (YouTube, Drive, Reels...)</label>
+          <input type="url" id="pVideo" placeholder="https://...">
+        </div>
+        <div class="field-row">
+          <div class="field"><label for="pBed">Quartos</label><input type="number" id="pBed" min="0" placeholder="0"></div>
+          <div class="field"><label for="pBath">Banheiros</label><input type="number" id="pBath" min="0" placeholder="0"></div>
+        </div>
+        <div class="field" id="fieldArea" hidden>
+          <label for="pArea">Área (m²)</label>
+          <input type="number" id="pArea" min="0" placeholder="Ex.: 180">
+        </div>
+        <div class="field">
+          <label for="pDesc">Detalhes / descrição</label>
+          <textarea id="pDesc" rows="2" placeholder="Ex.: Varanda gourmet, condomínio com segurança 24h, próximo a escolas..."></textarea>
+        </div>
+        <div class="field">
+          <label for="pMedia">Fotos e vídeos (sem limite) 📷🎬</label>
+          <input type="file" id="pMedia" multiple accept="image/*,video/*">
+          <small style="color:var(--text-soft);font-size:.74rem;display:block;margin-top:.35rem">Clique na ⭐ de uma foto para definir a <b>foto de capa</b> — ela aparece no cartão recortada perfeitamente. Vídeos: escolha o arquivo (sobe grátis na hora) ou cole um link do YouTube no campo acima.</small>
+          <div id="mediaPreview" style="display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.7rem"></div>
+        </div>
+        <div class="field">
+          <label for="pPhotoUrl">Ou link de uma foto já hospedada (opcional)</label>
+          <input type="url" id="pPhotoUrl" placeholder="https://... (copie o link direto da imagem)">
+        </div>
+        <button type="submit" class="btn btn-navy" id="pSubmitBtn">🚀 Publicar imóvel</button>
+        <div class="field" id="publishOut" hidden style="margin-top:1.2rem;border:1.5px solid #e5dccb;border-radius:14px;padding:1rem 1.1rem;background:var(--white)">
+          <b id="publishStatus" style="color:var(--navy-800)">✅ Salvo!</b>
+          <button type="button" class="btn btn-gold" id="openGithubBtn" style="width:100%;justify-content:center;margin-top:.8rem">🚀 Abrir GitHub — já vai tudo pronto</button>
+          <p class="form-note" style="text-align:left;margin-top:.8rem" id="publishStepsTxt"></p>
+        </div>
+        <p class="form-note" id="publishHint">💡 <b>Publicação grátis e sem token:</b> o GitHub abre já preenchido — só confirmar o <b>Commit changes</b>. Em ~1 minuto aparece para todo mundo (as fotos ficam dentro do próprio site, nada de serviço externo).</p>
+      </form>
+    </div>
+
+    <!-- Economia -->
+    <div class="tab-panel active" data-panel="economia">
+      <div class="prop-grid" data-grid="economia"></div>
+      <div class="empty-state">
+        <div style="font-size:2.2rem">🏠</div>
+        <b>Nenhum imóvel publicado em Economia ainda</b>
+        <span>Em breve, novas opções por aqui! Enquanto isso, fale com o Douglas para receber oportunidades exclusivas antes de todo mundo.</span>
+      </div>
+    </div>
+
+    <div class="tab-panel" data-panel="medio">
+      <div class="prop-grid" data-grid="medio"></div>
+      <div class="empty-state">
+        <div style="font-size:2.2rem">🏠</div>
+        <b>Nenhum imóvel publicado em Médio Padrão ainda</b>
+        <span>Em breve, novas opções por aqui! Enquanto isso, fale com o Douglas para receber oportunidades exclusivas antes de todo mundo.</span>
+      </div>
+    </div>
+
+    <div class="tab-panel" data-panel="alto">
+      <div class="prop-grid" data-grid="alto"></div>
+      <div class="empty-state">
+        <div style="font-size:2.2rem">🏠</div>
+        <b>Nenhum imóvel publicado em Alto Padrão ainda</b>
+        <span>Em breve, novas opções por aqui! Enquanto isso, fale com o Douglas para receber oportunidades exclusivas antes de todo mundo.</span>
+      </div>
+    </div>
+
+    <div class="tab-panel" data-panel="investimento">
+      <div class="prop-grid" data-grid="investimento"></div>
+      <div class="empty-state">
+        <div style="font-size:2.2rem">🏠</div>
+        <b>Nenhum imóvel publicado em Investimento ainda</b>
+        <span>Em breve, novas opções por aqui! Enquanto isso, fale com o Douglas para receber oportunidades exclusivas antes de todo mundo.</span>
+      </div>
+    </div>
+
+    <p class="tab-note">Não encontrou o imóvel ideal? <a href="#contato">Me conte o que procura</a> — trabalho com uma rede de parceiros e encontro opções off-market para você.</p>
+  </div>
+</section>
+
+<!-- ================= POR QUE ME ESCOLHER ================= -->
+<section class="section why">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Diferenciais</span>
+      <h2>Por que clientes me escolhem — <span class="gold-text">e me indicam</span></h2>
+      <p>Mais do que fechar negócio, meu compromisso é com a sua tranquilidade em cada etapa.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <h3>Atendimento humano de verdade</h3>
+        <p>Você fala comigo, do início ao fim. Sem robôs, sem repasse, sem ao telefone com três pessoas diferentes. Respondo rápido e com atenção real.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+        <h3>Transparência total</h3>
+        <p>Todos os custos, prazos e riscos na mesa antes de você decidir. Nada de surpresa no cartório ou na entrega das chaves.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3>Segurança jurídica</h3>
+        <p>Verificação completa de documentação, ônus e escrituras. Parceria com advogados e cartórios para uma negociação blindada.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <h3>Agilidade sem pressa</h3>
+        <p>Respondo no mesmo dia e organizo visitas na sua agenda — mas nenhuma decisão sua é acelerada. O ritmo é seu.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/></svg></div>
+        <h3>Análise de mercado real</h3>
+        <p>Preço baseado em dados, não em achismo. Avaliação comparativa do seu imóvel gratuita antes de listar ou ofertar.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg></div>
+        <h3>Negociação a seu favor</h3>
+        <p>Conheço os dois lados do balcão. Uso essa experiência para conquistar descontos, prazos e condições melhores para você.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MINHAS CONQUISTAS E REFERÊNCIAS ================= -->
+<section class="section conquistas" id="conquistas">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Resultados que falam por si</span>
+      <h2>Minhas <span class="gold-text">conquistas</span> e referências 🏆</h2>
+      <p>Rankings, premiações e reconhecimentos conquistados como corretor na Conceito Imobiliária.</p>
+    </div>
+    <div class="ach-stats reveal">
+      <div class="ach-stat"><b>🥇 Nº 1</b><span>em VGV na Conceito Imobiliária · placas de destaque em vendas</span></div>
+      <div class="ach-stat"><b>💰 + R$ 1 milhão</b><span>em VGV em um único mês — placas de reconhecimento</span></div>
+      <div class="ach-stat"><b>🏆 Parede de troféus</b><span>anos consecutivos de premiações e resultados</span></div>
+      <div class="ach-stat"><b>📜 Certificados</b><span>reconhecimento oficial da Conceito Imobiliária</span></div>
+    </div>
+    <div class="ach-sub">Rankings e destaques 🏅</div>
+    <div class="ach-slides">
+      <div class="ach-slide reveal">
+        <img src="conq-8.jpg" alt="Ranking Corretores Brasil: Douglas Lima em 1º lugar com VGV de R$ 1.120.594,99">
+        <div class="ach-cap">1º lugar no Ranking Corretores Brasil — VGV de R$ 1.120.594,99 🥇</div>
+      </div>
+      <div class="ach-slide reveal">
+        <img src="conq-9.jpg" alt="Arte de destaque: Douglas Lima com VGV de R$ 1.120.594,99 e mais de 1 milhão em vendas">
+        <div class="ach-cap">Destaque de +1 milhão em vendas no mês 💰</div>
+      </div>
+      <div class="ach-slide reveal">
+        <img src="conq-10.jpg" alt="Pódio da Conceito Imobiliária com Douglas Lima em 1º lugar, Luiza Cristina em 2º e Manuela Rocha em 3º">
+        <div class="ach-cap">Pódio Conceito: 1º lugar em VGV, à frente de Luiza Cristina e Manuela Rocha 🏆</div>
+      </div>
+    </div>
+    <div class="ach-grid" style="margin-top:1.4rem">
+      <div class="ach-card banner reveal">
+        <img src="conq-1.jpg" alt="Ranking Visita Corretor da Conceito Imobiliária — Douglas Terra em 1º lugar com 6 pontos">
+        <div class="ach-cap">1º lugar no ranking Visita Corretor — 6 pontos 🥇</div>
+      </div>
+      <div class="ach-card reveal">
+        <img src="conq-2.jpg" alt="Douglas Lima na mesa com dezenas de placas de premiação da Conceito Imobiliária" style="object-position:center 30%">
+        <div class="ach-cap">Coleção de placas Nº 1, Nº 2, Nº 3 e +1 milhão em VGV 💰</div>
+      </div>
+      <div class="ach-card reveal">
+        <img src="conq-4.jpg" alt="Douglas Lima e equipe da Conceito Imobiliária segurando as placas Nº 1 de novembro de 2025" style="object-position:center 22%">
+        <div class="ach-cap">Placas Nº 1 de novembro — celebrando com a equipe 🏆</div>
+      </div>
+      <div class="ach-card reveal">
+        <img src="conq-5.jpg" alt="Douglas Lima recebendo a placa Nº 1 em vendas de novembro de 2025 na unidade Mondubim" style="object-position:center 25%">
+        <div class="ach-cap">Nº 1 em vendas — novembro 2025 🥇</div>
+      </div>
+      <div class="ach-card reveal">
+        <img src="conq-6.jpg" alt="Douglas Lima e colega com as placas de mais de 600 mil em VGV e Nº 3 em vendas de agosto de 2025" style="object-position:center 20%">
+        <div class="ach-cap">+ R$ 600 mil em VGV e Nº 3 em vendas 📈</div>
+      </div>
+      <div class="ach-card reveal">
+        <img src="conq-11.jpg" alt="Douglas Lima segurando as placas Nº 3 de agosto de 2025 e mais de 600 mil em VGV" style="object-position:center 18%">
+        <div class="ach-cap">Placas Nº 3 em vendas e mais de 600 mil em VGV 📈</div>
+      </div>
+      <div class="ach-card slide reveal">
+        <img src="conq-7.jpg" alt="Arte de destaque da Conceito Imobiliária com VGV de R$ 640.319,99 e mais de 600 mil em vendas">
+        <div class="ach-cap">VGV de R$ 640.319,99 — destaque de +600 mil em vendas 💰</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIÊNCIAS (VÍDEO) ================= -->
+<section class="section exp" id="experiencias">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Na prática, com clientes</span>
+      <h2>Experiências <span class="gold-text">reais</span> 🎬</h2>
+      <p>Um pouco do clima de uma entrega de chaves na Conceito Imobiliária — aperte o play e veja.</p>
+    </div>
+    <div class="exp-stage">
+      <div class="exp-frame reveal" id="expFrame" data-video-card>
+        <video id="expVideo" class="exp-video" controls playsinline preload="none"
+               poster="exp-poster.jpg" width="464" height="832"
+               aria-label="Vídeo: celebração de entrega de chaves na Conceito Imobiliária">
+          <source src="experiencias.mp4" type="video/mp4">
+          Seu navegador não reproduz vídeos em HTML5.
+        </video>
+        <button class="exp-play" id="expPlay" type="button" aria-label="Reproduzir vídeo">
+          <span class="play-btn" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          </span>
+          <span>Assistir agora</span>
+        </button>
+      </div>
+    </div>
+    <p class="exp-note">O vídeo só carrega quando você aperta o play. 🎥</p>
+  </div>
+</section>
+
+<!-- ================= VISITAS REALIZADAS (VÍDEOS) ================= -->
+<section class="section visitas" id="visitas">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Acompanhamento de perto</span>
+      <h2>Visitas <span class="gold-text">realizadas</span> 🏠</h2>
+      <p>Atendimentos e visitas com clientes reais. Aperte o play para assistir — os vídeos só carregam no clique.</p>
+    </div>
+    <div class="vid-grid">
+      <div class="vid-item reveal">
+        <div class="vid-frame vid-portrait" data-video-card>
+          <video poster="visita-1-poster.jpg" preload="none" controls playsinline width="464" height="832"
+                 aria-label="Visita 1: atendimento com clientes na Conceito Imobiliária">
+            <source src="visita-1.mp4" type="video/mp4">
+            Seu navegador não reproduz vídeos em HTML5.
+          </video>
+          <button class="exp-play" type="button" aria-label="Reproduzir a primeira visita">
+            <span class="play-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+            <span>Assistir</span>
+          </button>
+        </div>
+        <p class="visita-cap">Atendimento com clientes na mesa — simulação e escolha do imóvel 🏡</p>
+      </div>
+      <div class="vid-item reveal">
+        <div class="vid-frame vid-wide" data-video-card>
+          <video poster="visita-2-poster.jpg" preload="none" controls playsinline width="1024" height="576"
+                 aria-label="Visita 2: Douglas Lima conversando com clientes">
+            <source src="visita-2.mp4" type="video/mp4">
+            Seu navegador não reproduz vídeos em HTML5.
+          </video>
+          <button class="exp-play" type="button" aria-label="Reproduzir a segunda visita">
+            <span class="play-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+            <span>Assistir</span>
+          </button>
+        </div>
+        <p class="visita-cap">Conversa e assinatura com os clientes — cada detalhe acompanhado de perto 🤝</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INSTAGRAM ================= -->
+<section class="section" id="instagram">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Bastidores &amp; conquistas</span>
+      <h2>Vem me acompanhar <span class="gold-text">no Instagram</span></h2>
+      <p>Visitas, simulações de financiamento, premiações e dicas de mercado — tudo primeiro por lá.</p>
+    </div>
+    <a class="insta-card reveal" href="https://www.instagram.com/dougllaslimaof" target="_blank" rel="noopener">
+      <img src="perfil.jpg" alt="Perfil de Douglas Lima no Instagram (@dougllaslimaof)">
+      <div class="insta-overlay">
+        <span style="font-size:1.6rem">📷</span>
+        <b>@dougllaslimaof</b>
+        <small>52,9 mil seguidores · Ver perfil completo</small>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ================= MURAL DE AGRADECIMENTOS ================= -->
+<section class="section" id="agradecimentos">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Mural de agradecimentos</span>
+      <h2>Conversas que <span class="gold-text">aquecem o coração</span> 💬</h2>
+      <p>Prints de conversas reais de quem conquistou o próprio teto com o Douglas.</p>
+    </div>
+    <div class="mural-grid">
+      <div class="chat-card reveal">
+        <div class="chat-head">
+          <span class="chat-arrow">‹</span>
+          <div class="chat-av ca-1">J</div>
+          <div><b>João</b><small>online</small></div>
+        </div>
+        <div class="chat-body">
+          <div class="chat-date">hoje</div>
+          <div class="bubble">Douglas, tô tremendo até agora kkk a chave chegou!! 🥹🔑<span class="meta">21:02</span></div>
+          <div class="bubble">Ontem à noite minha família sentou na varanda… sem vizinho batendo na parede, só o cheiro de coisa nova. 3 anos esperando isso</div>
+          <div class="bubble">Obrigado por aguentar minhas 300 perguntas sobre a Caixa 🙏😂<span class="meta">21:04</span></div>
+          <div class="bubble reply">Isso é só o começo, João! Primeira noite de sono na sua casa… depois me conta 😎🏡<span class="meta">21:07 <span class="tick">✓✓</span></span></div>
+        </div>
+      </div>
+      <div class="chat-card reveal">
+        <div class="chat-head">
+          <span class="chat-arrow">‹</span>
+          <div class="chat-av ca-2">P</div>
+          <div><b>Paulo</b><small>visto por último hoje às 19:05</small></div>
+        </div>
+        <div class="chat-body">
+          <div class="chat-date">ontem</div>
+          <div class="bubble">Fechamos com a Direcional!! Minha esposa chorou quando falaram “parabéns” kkk 😂<span class="meta">19:02</span></div>
+          <div class="bubble">E você lembrou até do portão da garagem que a gente tinha esquecido… quem faz isso? 🤝</div>
+          <div class="bubble reply">Detalhe faz diferença, Paulo! Agora bora marcar o churrasco da casa nova 🔥🏡<span class="meta">19:05 <span class="tick">✓✓</span></span></div>
+        </div>
+      </div>
+      <div class="chat-card reveal">
+        <div class="chat-head">
+          <span class="chat-arrow">‹</span>
+          <div class="chat-av ca-3">M</div>
+          <div><b>Marta</b><small>digitando…</small></div>
+        </div>
+        <div class="chat-body">
+          <div class="chat-date">hoje</div>
+          <div class="bubble">🎤 <i>Áudio</i> (0:47)<span class="meta">10:41</span></div>
+          <div class="bubble">Ela acordou e falou “mãe… é nossa mesmo?” 💔😭<span class="meta">10:42</span></div>
+          <div class="bubble">3 anos olhando esse bairro de longe pensando “um dia”… hoje o dia chegou</div>
+          <div class="bubble reply">Marta, eu vi sua dedicação em cada visita. O quarto dela foi a melhor parte 🥹💛<span class="meta">10:47 <span class="tick">✓✓</span></span></div>
+        </div>
+      </div>
+      <div class="chat-card reveal">
+        <div class="chat-head">
+          <span class="chat-arrow">‹</span>
+          <div class="chat-av ca-4">L</div>
+          <div><b>Lucas</b><small>visto por último ontem às 23:10</small></div>
+        </div>
+        <div class="chat-body">
+          <div class="chat-date">sáb</div>
+          <div class="bubble">Anúncio no ar segunda, contrato assinado quarta kkk o inquilino pagou adiantado 📈<span class="meta">11:07</span></div>
+          <div class="bubble">E seu cálculo de rentabilidade bateu centavo por centavo, viu</div>
+          <div class="bubble reply">É o primeiro de muitos, Lucas! Já separei 2 oportunidades na Parangaba antes de publicar 👀<span class="meta">11:12 <span class="tick">✓✓</span></span></div>
+        </div>
+      </div>
+      <div class="chat-card reveal">
+        <div class="chat-head">
+          <span class="chat-arrow">‹</span>
+          <div class="chat-av ca-5">A</div>
+          <div><b>Ana</b><small>online</small></div>
+        </div>
+        <div class="chat-body">
+          <div class="chat-date">hoje</div>
+          <div class="bubble">APROVADA na Caixa de primeira!! Eu que tinha medo até de simular kkk 🥹<span class="meta">14:32</span></div>
+          <div class="bubble">E você me respondeu num domingo às 23h… nem meu chefe faz isso 😂💛</div>
+          <div class="bubble reply">Ana, quem corre atrás merece resposta rápida 😉 Bem-vinda à sua casa nova 🏡💛<span class="meta">14:34 <span class="tick">✓✓</span></span></div>
+        </div>
+      </div>
+      <div class="chat-card reveal">
+        <div class="chat-head">
+          <span class="chat-arrow">‹</span>
+          <div class="chat-av ca-6">C</div>
+          <div><b>Carlos</b><small>visto por último hoje às 09:20</small></div>
+        </div>
+        <div class="chat-body">
+          <div class="chat-date">12/11</div>
+          <div class="bubble">Mano… saí do banco com o financiamento APROVADO 🤯<span class="meta">09:15</span></div>
+          <div class="bubble">Minha filha só pergunta “pai, quando a gente vai dormir na casa nova?”</div>
+          <div class="bubble reply">Carlos, essa é a mensagem que eu mais gosto de receber. Semana que vem tem chave 🗝️😎<span class="meta">09:20 <span class="tick">✓✓</span></span></div>
+        </div>
+      </div>
+    </div>
+    <p class="form-note" style="margin-top:1.6rem">Quer deixar seu recadinho no mural? Chama o Douglas no WhatsApp! 💛</p>
+  </div>
+</section>
+
+<!-- ================= PROCESSO ================= -->
+<section class="section process">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Como funciona</span>
+      <h2>Seu caminho até as chaves em <span class="gold-text">4 passos</span></h2>
+      <p>Um processo desenhado para ser simples, claro e sem surpresas.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-num"></div>
+        <h3>Primeira conversa</h3>
+        <p>Me conte seu objetivo, prazo e renda — por WhatsApp. Sem compromisso.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num"></div>
+        <h3>Análise de crédito</h3>
+        <p>Simulo seu financiamento (MCMV ou padrão), calculo a entrada e a primeira parcela que cabem no seu bolso.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num"></div>
+        <h3>Imóvel e proposta</h3>
+        <p>Seleciono os imóveis certos, verificamos a documentação e faço a proposta com as melhores condições.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num"></div>
+        <h3>Chaves na mão</h3>
+        <p>Acompanho a aprovação do banco, assinatura e entrega. E continuo à disposição depois da mudança.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTATO ================= -->
+<section class="section contact" id="contato">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-left reveal">
+        <span class="eyebrow">Vamos conversar?</span>
+        <h2>Sua aprovação começa com <em>uma mensagem</em>.</h2>
+        <p>Preencha o formulário ou me chame direto no WhatsApp. Respondo rápido — e normalmente bem antes do que você espera.</p>
+        <div class="contact-lines">
+          <div class="c-line">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.34 1.78.66 2.62a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.46-1.23a2 2 0 0 1 2.11-.45c.84.32 1.72.54 2.62.66A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div><small>WhatsApp</small><b>(85) 9640-1953</b></div>
+          </div>
+          <div class="c-line">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            <div><small>E-mail</small><b>douglaslimaoficial29@gmail.com</b></div>
+          </div>
+          <div class="c-line">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+            <div><small>Atendimento</small><b>Seg a Sáb · 8h às 19h</b></div>
+          </div>
+          <div class="c-line">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></div>
+            <div><small>Instagram</small><b>@dougllaslimaof</b></div>
+          </div>
+        </div>
+        <a href="#" class="btn btn-gold" id="waHeroBtn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.1 4.49.71.3 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.09 1.76-.72 2-1.42.25-.7.25-1.3.18-1.42-.07-.13-.27-.2-.57-.35zM12.05 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.83 9.83 0 0 1-1.51-5.26c0-5.44 4.43-9.87 9.89-9.87a9.82 9.82 0 0 1 6.99 2.9 9.82 9.82 0 0 1 2.9 6.99c0 5.44-4.43 9.87-9.89 9.87zm8.42-18.3A11.8 11.8 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.9 11.9 0 0 0 5.68 1.45h.01c6.55 0 11.9-5.34 11.9-11.9 0-3.18-1.24-6.16-3.48-8.4z"/></svg>
+          Chamar no WhatsApp
+        </a>
+      </div>
+      <div class="form-card reveal">
+        <h3>Conte o que você procura</h3>
+        <p>Leva menos de 1 minuto. Eu mesmo respondo cada mensagem.</p>
+        <form id="leadForm">
+          <div id="formMain" class="fview">
+          <div class="field-row">
+            <div class="field">
+              <label for="fname">Seu nome *</label>
+              <input type="text" id="fname" placeholder="Ex.: João Silva" required>
+            </div>
+            <div class="field">
+              <label for="openPerfil">Seu perfil financeiro (opcional)</label>
+              <button type="button" id="openPerfil" class="perfil-btn">🪙 Responder perguntas</button>
+            </div>
+          </div>
+          <div class="field">
+            <label for="fMotivo">Motivo *</label>
+            <input type="text" id="fMotivo" placeholder="Ex.: Quero comprar meu primeiro apê perto do trabalho" required>
+          </div>
+          <div class="field">
+            <label for="fmsg">Mensagem (opcional)</label>
+            <textarea id="fmsg" rows="3" placeholder="Ex.: Procuro um apê de 2 quartos até R$ 300 mil, perto do trabalho..."></textarea>
+          </div>
+          </div>
+          <div id="formPerfil" class="fview" hidden>
+            <p class="pf-intro">As informações abaixo servem para identificar seu perfil. 🔎</p>
+            <div class="field">
+              <label>1 · Você trabalha de carteira assinada ou é autônomo(a)? *</label>
+              <div class="pf-opts">
+                <label class="pf-opt"><input type="radio" name="pfVinculo" value="Carteira assinada (CLT)"><span>Carteira assinada</span></label>
+                <label class="pf-opt"><input type="radio" name="pfVinculo" value="Autônomo(a)"><span>Autônomo(a)</span></label>
+                <label class="pf-opt"><input type="radio" name="pfVinculo" value="CLT + autônomo"><span>Os dois</span></label>
+              </div>
+            </div>
+            <div class="field">
+              <label for="pfRenda">2 · Qual a sua renda bruta do contracheque, sem os descontos? Em caso de autônomo(a), qual a sua renda média mensal? *</label>
+              <input type="text" id="pfRenda" placeholder="Ex.: R$ 3.200,00">
+            </div>
+            <div class="field">
+              <label>3 · Já trabalhou mais de 3 anos de carteira assinada? (Juntando todos os trabalhos da vida) *</label>
+              <div class="pf-opts">
+                <label class="pf-opt"><input type="radio" name="pfAnos" value="Sim"><span>Sim</span></label>
+                <label class="pf-opt"><input type="radio" name="pfAnos" value="Não"><span>Não</span></label>
+              </div>
+            </div>
+            <div class="field">
+              <label>4 · Você é casado(a) no papel? *</label>
+              <div class="pf-opts">
+                <label class="pf-opt"><input type="radio" name="pfCasado" value="Sim"><span>Sim</span></label>
+                <label class="pf-opt"><input type="radio" name="pfCasado" value="Não"><span>Não</span></label>
+                <label class="pf-opt"><input type="radio" name="pfCasado" value="União estável"><span>União estável</span></label>
+              </div>
+            </div>
+            <div class="field">
+              <label>5 · Tem alguma restrição no nome? *</label>
+              <div class="pf-opts">
+                <label class="pf-opt"><input type="radio" name="pfRestricao" value="Sim"><span>Sim</span></label>
+                <label class="pf-opt"><input type="radio" name="pfRestricao" value="Não"><span>Não</span></label>
+              </div>
+            </div>
+            <button type="button" id="pfSave" class="pf-save" disabled>💾 Salvar</button>
+            <div class="pf-confirm" id="pfConfirm" hidden>
+              <div class="pf-confirm-box">
+                <b>Tudo certo com as informações? 🤝</b>
+                <p>Elas vão junto com a sua mensagem para o Douglas.</p>
+                <div class="pf-confirm-btns">
+                  <button type="button" id="pfYes" class="btn btn-gold">✅ Sim, salvar</button>
+                  <button type="button" id="pfNo" class="btn btn-navy">✖ Não, revisar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="submit" id="leadSubmit" class="btn btn-navy">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+            Enviar pelo WhatsApp
+          </button>
+          <p class="form-note">🔒 Seus dados estão seguros. Usados apenas para o atendimento — sem spam, prometido.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="#inicio" class="logo" style="margin-bottom:1rem">
+          <div class="logo-mark logo-photo" role="img" aria-label="Foto de Douglas Lima"></div>
+          <div class="logo-text">
+            <strong>Douglas Lima</strong>
+            <span>Corretor de Imóveis</span>
+          </div>
+        </a>
+        <p>Transformando o financiamento do seu imóvel em conquista real — com disciplina, foco e um atendimento que coloca você em primeiro lugar.</p>
+        <div class="socials">
+          <a class="soc" href="https://www.instagram.com/dougllaslimaof" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a class="soc" href="https://wa.me/558596401953" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.1 4.49.71.3 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.09 1.76-.72 2-1.42.25-.7.25-1.3.18-1.42-.07-.13-.27-.2-.57-.35zM12.05 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.83 9.83 0 0 1-1.51-5.26c0-5.44 4.43-9.87 9.89-9.87a9.82 9.82 0 0 1 6.99 2.9 9.82 9.82 0 0 1 2.9 6.99c0 5.44-4.43 9.87-9.89 9.87zm8.42-18.3A11.8 11.8 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.9 11.9 0 0 0 5.68 1.45h.01c6.55 0 11.9-5.34 11.9-11.9 0-3.18-1.24-6.16-3.48-8.4z"/></svg>
+          </a>
+          <a class="soc" href="#contato" aria-label="E-mail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul class="footer-links">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre mim</a></li>
+          <li><a href="#imoveis">Imóveis</a></li>
+          <li><a href="#conquistas">Conquistas e referências</a></li>
+          <li><a href="#experiencias">Experiências em vídeo</a></li>
+          <li><a href="#visitas">Visitas realizadas</a></li>
+          <li><a href="#sonhos">Momentos e conquistas</a></li>
+          <li><a href="#agradecimentos">Mural de agradecimentos</a></li>
+          <li><a href="#instagram">Instagram</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Especialidades</h4>
+        <ul class="footer-links">
+          <li><a href="#imoveis">Imóveis Economia / MCMV</a></li>
+          <li><a href="#imoveis">Imóveis Médio Padrão</a></li>
+          <li><a href="#imoveis">Imóveis Alto Padrão</a></li>
+          <li><a href="#imoveis">Imóveis para Investimento</a></li>
+          <li><a href="#contato">Simulação de financiamento gratuita</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Douglas Lima — Corretor de Imóveis · CRECI-CE 29262</span>
+      <span>Feito com dedicação para você encontrar o seu lugar no mundo. 🏡</span>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp FAB -->
+<a class="wa-fab" href="#" id="waFab" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.1 4.49.71.3 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.09 1.76-.72 2-1.42.25-.7.25-1.3.18-1.42-.07-.13-.27-.2-.57-.35zM12.05 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.83 9.83 0 0 1-1.51-5.26c0-5.44 4.43-9.87 9.89-9.87a9.82 9.82 0 0 1 6.99 2.9 9.82 9.82 0 0 1 2.9 6.99c0 5.44-4.43 9.87-9.89 9.87zm8.42-18.3A11.8 11.8 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.9 11.9 0 0 0 5.68 1.45h.01c6.55 0 11.9-5.34 11.9-11.9 0-3.18-1.24-6.16-3.48-8.4z"/></svg>
+</a>
+
+<script>
+  // ===== WhatsApp (TROQUE AQUI pelo número real, formato internacional, quando quiser mensagem pré-preenchida) =====
+  const WHATSAPP = "558596401953"; // (85) 9640-1953
+  const waMsg = "Olá, Douglas! Vi seu site e quero simular meu financiamento. 😊";
+
+  function waLink(msg){ return `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`; }
+  document.getElementById("waFab").href = waLink(waMsg);
+  document.getElementById("waHeroBtn").href = waLink(waMsg);
+
+  // Botão "Adicionar imóvel" — delegação resiliente (funciona mesmo se outro script falhar)
+  document.addEventListener("click", function(e){
+    if(e.target.closest("#adminExit")){
+      isAdmin = false;
+      const c = document.getElementById("manageCard");
+      if(c) c.hidden = true;
+      applyAdmin();
+      alert("Painel oculto. Para abrir de novo, entre com #admin e a senha.");
+      return;
+    }
+    const t = e.target.closest("#toggleManage");
+    if(!t) return;
+    const c = document.getElementById("manageCard");
+    if(!c) return;
+    c.hidden = !c.hidden;
+    if(!c.hidden){ c.scrollIntoView({behavior:"smooth", block:"start"}); }
+  });
+
+  // ===== Lead form -> WhatsApp (com perfil financeiro) =====
+  // O perfil fica só na memória da aba: após enviar ou recarregar, volta ao padrão.
+  const formMain = document.getElementById("formMain");
+  const formPerfil = document.getElementById("formPerfil");
+  const leadSubmit = document.getElementById("leadSubmit");
+  let _perfil = null;
+  function pfVal(n){ const r = document.querySelector('input[name="' + n + '"]:checked'); return r ? r.value : ""; }
+  function pfComplete(){
+    return pfVal("pfVinculo") && document.getElementById("pfRenda").value.trim() && pfVal("pfAnos") && pfVal("pfCasado") && pfVal("pfRestricao");
+  }
+  function pfRefreshSave(){ document.getElementById("pfSave").disabled = !pfComplete(); }
+  ["pfVinculo","pfAnos","pfCasado","pfRestricao"].forEach(n => document.querySelectorAll('input[name="' + n + '"]').forEach(r => r.addEventListener("change", pfRefreshSave)));
+  document.getElementById("pfRenda").addEventListener("input", pfRefreshSave);
+
+  function slideViews(showPerfil){
+    const outEl = showPerfil ? formMain : formPerfil;
+    const inEl = showPerfil ? formPerfil : formMain;
+    outEl.classList.add("fslide-out");
+    setTimeout(() => {
+      outEl.hidden = true;
+      outEl.classList.remove("fslide-out");
+      inEl.hidden = false;
+      inEl.classList.add("fslide-in");
+      setTimeout(() => inEl.classList.remove("fslide-in"), 620);
+    }, 330);
+  }
+  document.getElementById("openPerfil").addEventListener("click", () => slideViews(true));
+  document.getElementById("pfSave").addEventListener("click", () => { if(pfComplete()) document.getElementById("pfConfirm").hidden = false; });
+  document.getElementById("pfNo").addEventListener("click", () => { document.getElementById("pfConfirm").hidden = true; });
+  function perfilReset(){
+    _perfil = null;
+    document.getElementById("pfRenda").value = "";
+    ["pfVinculo","pfAnos","pfCasado","pfRestricao"].forEach(n => document.querySelectorAll('input[name="' + n + '"]').forEach(r => r.checked = false));
+    document.getElementById("pfConfirm").hidden = true;
+    pfRefreshSave();
+    const ob = document.getElementById("openPerfil");
+    ob.classList.remove("done");
+    ob.textContent = "🪙 Responder perguntas";
+    formPerfil.hidden = true;
+    formMain.hidden = false;
+  }
+  document.getElementById("pfYes").addEventListener("click", () => {
+    _perfil = {vinculo: pfVal("pfVinculo"), renda: document.getElementById("pfRenda").value.trim(), anos: pfVal("pfAnos"), casado: pfVal("pfCasado"), restricao: pfVal("pfRestricao")};
+    document.getElementById("pfConfirm").hidden = true;
+    const ob = document.getElementById("openPerfil");
+    ob.classList.add("done");
+    ob.textContent = "✅ Perfil salvo — editar";
+    slideViews(false);
+    leadSubmit.classList.add("glow");
+    setTimeout(() => leadSubmit.classList.remove("glow"), 9000);
+  });
+
+  document.getElementById("leadForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    const n = document.getElementById("fname").value.trim();
+    const motivo = document.getElementById("fMotivo").value.trim();
+    const m = document.getElementById("fmsg").value.trim();
+    if(!n || !motivo){ alert("Preencha seu nome e o motivo 🙂"); return; }
+    let msg = `Olá, Douglas! Meu nome é ${n}.\n🎯 Motivo: ${motivo}`;
+    if(m) msg += `\n💬 ${m}`;
+    if(_perfil){
+      msg += `\n🪙 Meu perfil financeiro:\n1) Vínculo: ${_perfil.vinculo}\n2) Renda bruta: ${_perfil.renda}\n3) 3+ anos de carteira: ${_perfil.anos}\n4) Casado(a) no papel: ${_perfil.casado}\n5) Restrição no nome: ${_perfil.restricao}`;
+    }
+    window.open(waLink(msg), "_blank");
+    leadSubmit.classList.remove("glow");
+    this.reset();
+    perfilReset();
+  });
+
+  // ===== Tabs =====
+  const tabs = document.querySelectorAll(".tab");
+  const panels = document.querySelectorAll(".tab-panel");
+  tabs.forEach(t => t.addEventListener("click", () => {
+    tabs.forEach(x => x.classList.remove("active"));
+    panels.forEach(p => p.classList.remove("active"));
+    t.classList.add("active");
+    document.querySelector(`[data-panel="${t.dataset.tab}"]`).classList.add("active");
+  }));
+
+  // ===== Header scrolled =====
+  const topbar = document.getElementById("topbar");
+  window.addEventListener("scroll", () => {
+    topbar.classList.toggle("scrolled", window.scrollY > 40);
+  }, {passive:true});
+
+  // ===== Mobile menu =====
+  const burger = document.getElementById("burger");
+  const mobileMenu = document.getElementById("mobileMenu");
+  burger.addEventListener("click", () => mobileMenu.classList.toggle("open"));
+  mobileMenu.querySelectorAll("a").forEach(a => a.addEventListener("click", () => mobileMenu.classList.remove("open")));
+
+  // ===== Gestão de imóveis =====
+  // Publicação grátis sem token: o painel abre o GitHub já preenchido (imoveis.json) — só confirmar o Commit
+  const GH_OWNER = "dougllaslimaof";   // ← ajuste se usar outro usuário do GitHub
+  const GH_REPO  = "dougllaslimaof.github.io"; // ← ajuste para o nome do seu repositório
+  const GH_BRANCH = "main";
+  const PROPS_CMS = []; // fallback manual (linhas coladas)
+  // >>> COLE AQUI AS LINHAS GERADAS PELO PAINEL — ex.: PROPS_CMS.push({"title":"..."}); <<<
+  let POSTS = [];        // imóveis publicados (imoveis.json no repositório)
+  let _pendingAdds = []; // publicados há menos de ~1 min (aguardando o build do Pages)
+  let _deletedIds = [];  // apagados há menos de ~1 min (aguardando o build do Pages)
+  let _mediaFiles = [];  // [{file, isVideo, url}] do formulário
+  let _coverIdx = -1;    // índice da foto de capa
+  const CAT_LABEL = {economia:"Economia", medio:"Médio Padrão", alto:"Alto Padrão", investimento:"Investimento"};
+  const CAT_STYLE = {economia:"ph-eco", medio:"ph-med", alto:"ph-alto", investimento:"ph-inv"};
+
+  // ===== Publicação grátis, sem token =====
+  // Fotos: comprimidas no navegador e guardadas dentro do imoveis.json (no próprio site — permanente).
+  // Vídeos em arquivo: upload grátis anônimo (gofile.io) e vira link “Ver vídeo”. Vídeo por link: YouTube etc.
+  // Publicar: 1 clique abre o GitHub com o imoveis.json pronto → Commit changes → em ~1 min está no ar para todos.
+  let _lastJson = "";
+  let _repoJsonExists = false; // true quando o imoveis.json já existe no repositório
+
+  function resetMediaForm(){
+    _mediaFiles = [];
+    _coverIdx = -1;
+    renderMediaPreview();
+  }
+
+  function fileToDataURL(file){
+    return new Promise((res, rej) => { const r = new FileReader(); r.onload = () => res(r.result); r.onerror = () => rej(new Error("Falha ao ler " + file.name)); r.readAsDataURL(file); });
+  }
+
+  async function compressImage(file){
+    const dataUrl = await fileToDataURL(file);
+    try{
+      const img = await new Promise((res, rej) => { const i = new Image(); i.onload = () => res(i); i.onerror = () => rej(new Error("img")); i.src = dataUrl; });
+      const max = 1400;
+      let w = img.naturalWidth, h = img.naturalHeight;
+      const scale = Math.min(1, max / Math.max(w, h));
+      w = Math.max(1, Math.round(w * scale)); h = Math.max(1, Math.round(h * scale));
+      const cv = document.createElement("canvas"); cv.width = w; cv.height = h;
+      cv.getContext("2d").drawImage(img, 0, 0, w, h);
+      const out = cv.toDataURL("image/jpeg", .72);
+      return out.length < dataUrl.length ? out : dataUrl;
+    }catch(e){ return dataUrl; }
+  }
+
+  async function gofileUpload(file){
+    let server = "store1";
+    try{
+      const srs = await (await fetch("https://api.gofile.io/servers")).json();
+      const first = srs && srs.data && srs.data.servers && srs.data.servers[0];
+      if(first && first.name) server = first.name;
+    }catch(e){}
+    const fd = new FormData();
+    fd.append("file", file, file.name);
+    const r = await fetch("https://" + server + ".gofile.io/uploadfile", {method: "POST", body: fd});
+    const j = await r.json();
+    if(!j || j.status !== "ok" || !j.data || !j.data.downloadPage) throw new Error("Falha no upload do vídeo (tente um link do YouTube no campo “Link do vídeo”)");
+    return j.data.downloadPage;
+  }
+
+  function legacyCopy(txt){
+    try{
+      const ta = document.createElement("textarea");
+      ta.value = txt; ta.style.cssText = "position:fixed;left:-9999px;top:0";
+      document.body.appendChild(ta); ta.focus(); ta.select();
+      const ok = document.execCommand("copy");
+      ta.remove(); return ok;
+    }catch(e){ return false; }
+  }
+  function copyText(txt){
+    if(navigator.clipboard && window.isSecureContext){
+      return navigator.clipboard.writeText(txt).then(() => true).catch(() => legacyCopy(txt));
+    }
+    return Promise.resolve(legacyCopy(txt));
+  }
+
+  function buildPostsJson(){
+    return JSON.stringify(POSTS.filter(x => !_deletedIds.includes(x.id)), null, 2);
+  }
+
+  function showPublish(status, btnText, stepsTxt){
+    document.getElementById("publishStatus").innerHTML = status;
+    document.getElementById("openGithubBtn").textContent = btnText;
+    document.getElementById("publishStepsTxt").innerHTML = stepsTxt;
+    const out = document.getElementById("publishOut");
+    out.hidden = false;
+    out.scrollIntoView({behavior: "smooth", block: "center"});
+  }
+
+  document.getElementById("openGithubBtn").addEventListener("click", function(){
+    const json = buildPostsJson();
+    const firstTime = !(_repoJsonExists || (() => { try{ return localStorage.getItem("douglas_published") === "1"; }catch(e){ return false; } })());
+    try{ localStorage.setItem("douglas_published", "1"); }catch(e){}
+    const gh = "https://github.com/" + GH_OWNER + "/" + GH_REPO + "/";
+    const enc = encodeURIComponent(json);
+    copyText(json).then(copied => {
+      let url, steps;
+      if(firstTime && enc.length < 6500){
+        url = gh + "new/" + GH_BRANCH + "?filename=imoveis.json&value=" + enc;
+        steps = "O GitHub abre com o arquivo <b>imoveis.json</b> já preenchido ✨ — confira e clique em <b>Commit changes</b>.";
+      } else {
+        url = firstTime ? gh + "new/" + GH_BRANCH + "?filename=imoveis.json" : gh + "edit/" + GH_BRANCH + "/imoveis.json";
+        steps = "O conteúdo já está copiado 📋 — no editor do GitHub aperte <b>Ctrl+V</b>" + (firstTime ? "" : " (antes, <b>Ctrl+A</b> para substituir tudo)") + ", depois clique em <b>Commit changes</b>.";
+      }
+      window.open(url, "_blank");
+      document.getElementById("publishStepsTxt").innerHTML = steps + " Em ~1 minuto aparece no site para todo mundo (os visitantes recebem automaticamente).";
+    });
+  });
+
+  async function loadPosts(){
+    try{
+      const r = await fetch("imoveis.json?ts=" + Date.now(), {cache: "no-store"});
+      if(r.ok){
+        _repoJsonExists = true;
+        const txt = await r.text();
+        if(txt === _lastJson) return;
+        _lastJson = txt;
+        const d = JSON.parse(txt);
+        if(Array.isArray(d)){
+          POSTS = d.filter(x => !_deletedIds.includes(x.id));
+          _pendingAdds = _pendingAdds.filter(x => {
+            if(d.some(y => y.id === x.id)) return false;
+            POSTS.push(x); return true;
+          });
+          renderProps();
+        }
+      }
+    }catch(e){}
+  }
+
+  function updateCatFields(){
+    const pro = ["alto", "investimento"].includes(document.getElementById("pCat").value);
+    document.getElementById("fieldPreco").hidden = !pro;
+    document.getElementById("fieldArea").hidden = !pro;
+  }
+  document.getElementById("pCat").addEventListener("change", updateCatFields);
+  updateCatFields();
+
+  function renderMediaPreview(){
+    const wrap = document.getElementById("mediaPreview");
+    wrap.innerHTML = "";
+    _mediaFiles.forEach((m, i) => {
+      const d = document.createElement("div");
+      d.className = "thumb" + (i === _coverIdx ? " is-cover" : "");
+      if(m.isVideo){ d.innerHTML = '<span class="tplay">▶</span>'; }
+      else { const im = document.createElement("img"); im.src = m.url; im.alt = m.file.name; d.appendChild(im); }
+      const bar = document.createElement("div"); bar.className = "tbar";
+      if(!m.isVideo){
+        const star = document.createElement("button"); star.type = "button";
+        star.className = "tbtn star" + (i === _coverIdx ? " on" : ""); star.textContent = "⭐"; star.title = "Definir como foto de capa";
+        star.addEventListener("click", () => { _coverIdx = i; renderMediaPreview(); });
+        bar.appendChild(star);
+      }
+      const del = document.createElement("button"); del.type = "button"; del.className = "tbtn"; del.textContent = "✖"; del.title = "Remover da lista";
+      del.addEventListener("click", () => {
+        _mediaFiles.splice(i, 1);
+        if(_coverIdx >= _mediaFiles.length) _coverIdx = (_mediaFiles.length ? _mediaFiles.findIndex(x => !x.isVideo) : -1);
+        renderMediaPreview();
+      });
+      bar.appendChild(del);
+      d.appendChild(bar);
+      wrap.appendChild(d);
+    });
+  }
+  document.getElementById("pMedia").addEventListener("change", function(){
+    [...this.files].forEach(f => _mediaFiles.push({file: f, isVideo: f.type.startsWith("video"), url: (f.type.startsWith("video") ? "" : URL.createObjectURL(f))}));
+    if(_coverIdx < 0) _coverIdx = _mediaFiles.findIndex(m => !m.isVideo);
+    this.value = "";
+    renderMediaPreview();
+  });
+
+  function addPropCard(p, isPost){
+    const grid = document.querySelector('[data-grid="' + p.cat + '"]');
+    if(!grid) return;
+    const specs = [];
+    if(p.bed)  specs.push("🛏 " + p.bed  + (p.bed==1 ? " quarto" : " quartos"));
+    if(p.bath) specs.push("🛁 " + p.bath + (p.bath==1 ? " banheiro" : " banheiros"));
+    if(p.area) specs.push("📐 " + p.area + " m²");
+    const specsHtml = specs.map(s => "<span>" + s + "</span>").join("");
+    const photos = p.photos || (p.photo ? [p.photo] : []);
+    const videos = p.videos || [];
+    const cover = p.cover || photos[0] || null;
+    const vidLink = p.video || null;
+    let priceHtml = '<div class="prop-price">Consulte</div>';
+    if(p.preco && p.renda){
+      priceHtml = '<div class="prop-price"><small>Preço</small>' + p.preco + '<small style="margin-top:.2rem">Renda: ' + p.renda + '</small></div>';
+    } else if(p.preco){
+      priceHtml = '<div class="prop-price"><small>Preço</small>' + p.preco + '</div>';
+    } else if(p.renda){
+      priceHtml = '<div class="prop-price"><small>Renda</small>' + p.renda + '</div>';
+    }
+    const card = document.createElement("article");
+    card.className = "prop-card";
+    card.dataset.pid = p.id || "";
+    card.innerHTML =
+      '<div class="prop-media">' +
+        (cover ? '<img src="' + cover + '" alt="' + (p.title||"Imóvel") + '" style="cursor:' + (photos.length > 1 ? 'pointer' : 'default') + '">' : '<div class="ph ' + (CAT_STYLE[p.cat]||"") + '"></div>') +
+        (photos.length > 1 ? '<span class="photo-count">📷 ' + photos.length + ' fotos</span>' : '') +
+        '<span class="prop-tag blue">' + (CAT_LABEL[p.cat]||"") + '</span>' +
+        ((vidLink || videos.length) ? '<button class="video-badge" type="button">▶ Ver vídeo</button>' : '') +
+        (isAdmin && isPost ? '<button class="prop-del" type="button" data-pid="' + (p.id||"") + '">🗑 Apagar</button>' : '') +
+      '</div>' +
+      '<div class="prop-body">' +
+        (p.loc ? '<span class="prop-loc">📍 ' + p.loc + '</span>' : '') +
+        '<h3>' + (p.title || "Imóvel") + '</h3>' +
+        (specsHtml ? '<div class="prop-specs">' + specsHtml + '</div>' : '') +
+        (p.desc ? '<p class="prop-desc">' + p.desc + '</p>' : '') +
+        '<div class="prop-foot">' + priceHtml +
+          '<a href="' + waLink("Olá, Douglas! Tenho interesse no imóvel: " + (p.title||"")) + '" class="link-arrow">Tenho interesse →</a>' +
+        '</div>' +
+      '</div>';
+    grid.appendChild(card);
+    if(photos.length > 1){
+      const img = card.querySelector(".prop-media img");
+      let idx = 0;
+      img.addEventListener("click", () => { idx = (idx + 1) % photos.length; img.src = photos[idx]; });
+    }
+    const vb = card.querySelector(".video-badge");
+    if(vb && (vidLink || videos.length)){
+      const links = [].concat(videos || [], vidLink ? [vidLink] : []);
+      vb.addEventListener("click", () => {
+        const link = links[0];
+        if(!link) return;
+        const media = card.querySelector(".prop-media");
+        const yt = (link.match(/(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/)|youtu\.be\/)([\w-]{6,})/) || [])[1];
+        if(yt){
+          const existing = media.querySelector("iframe, video");
+          if(existing){ existing.remove(); return; }
+          const f = document.createElement("iframe");
+          f.src = "https://www.youtube.com/embed/" + yt + "?autoplay=1&rel=0";
+          f.allow = "autoplay; encrypted-media; picture-in-picture";
+          f.style.cssText = "position:absolute;inset:0;width:100%;height:100%;border:0;z-index:1";
+          media.appendChild(f);
+        } else {
+          window.open(link, "_blank", "noopener");
+        }
+      });
+    }
+  }
+
+  function renderProps(){
+    document.querySelectorAll("[data-grid]").forEach(g => g.innerHTML = "");
+    POSTS.forEach(p => addPropCard(p, true));
+    PROPS_CMS.forEach(p => addPropCard(p, false));
+    document.querySelectorAll(".tab-panel").forEach(panel => {
+      const grid = panel.querySelector("[data-grid]");
+      const empty = panel.querySelector(".empty-state");
+      if(grid && empty) empty.style.display = grid.children.length ? "none" : "flex";
+    });
+    document.querySelectorAll(".prop-del").forEach(b => b.addEventListener("click", function(){ deletePost(this.dataset.pid); }));
+  }
+
+  async function deletePost(id){
+    if(!id) return;
+    if(!confirm("🗑 Apagar esta publicação do site?")) return;
+    _deletedIds.push(id);
+    POSTS = POSTS.filter(x => (x.id||"") !== id);
+    _lastJson = "";
+    renderProps();
+    showPublish("🗑 <b>Imóvel removido daqui.</b>", "🗑 Abrir GitHub para remover para todo mundo", "O GitHub vai abrir com a lista já <b>sem este imóvel</b> — cole/substitua o conteúdo e clique em <b>Commit changes</b>. Ele sai do ar em ~1 minuto.");
+  }
+
+  document.getElementById("propForm").addEventListener("submit", async function(e){
+    e.preventDefault();
+    const btn = document.getElementById("pSubmitBtn");
+    const val = id => document.getElementById(id).value.trim();
+    const cat = val("pCat");
+    const pro = ["alto", "investimento"].includes(cat);
+    const item = {
+      id: "p" + Date.now(),
+      title: val("pTitle"), cat: cat, loc: val("pLoc"),
+      renda: val("pRenda") || null,
+      preco: pro ? (val("pPreco") || null) : null,
+      video: val("pVideo") || null,
+      bed: val("pBed") || null, bath: val("pBath") || null,
+      area: pro ? (val("pArea") || null) : null,
+      desc: val("pDesc"), photos: [], videos: [], cover: null,
+      photo: null
+    };
+    const urlFoto = val("pPhotoUrl");
+    if(!item.renda && !item.preco && !_mediaFiles.length && !urlFoto && !item.video){
+      alert("Preencha pelo menos a Renda/Preço ou adicione uma foto/vídeo."); return;
+    }
+    btn.disabled = true; const oldTxt = btn.textContent;
+    try{
+      let nFotos = 0, nVideos = 0;
+      for(let i = 0; i < _mediaFiles.length; i++){
+        const m = _mediaFiles[i];
+        if(m.isVideo){
+          nVideos++;
+          btn.textContent = "⏳ Enviando vídeo " + nVideos + " (grátis, sem token)...";
+          item.videos.push(await gofileUpload(m.file));
+        } else {
+          nFotos++;
+          btn.textContent = "⏳ Otimizando foto " + nFotos + "...";
+          item.photos.push(await compressImage(m.file));
+        }
+      }
+      if(urlFoto) item.photos.push(urlFoto);
+      if(_coverIdx >= 0 && _mediaFiles[_coverIdx] && !_mediaFiles[_coverIdx].isVideo){
+        const idxFoto = _mediaFiles.slice(0, _coverIdx + 1).filter(m => !m.isVideo).length - 1;
+        if(idxFoto >= 0 && idxFoto < item.photos.length) item.cover = item.photos[idxFoto];
+      }
+      if(!item.cover && item.photos.length) item.cover = item.photos[0];
+      btn.textContent = "⏳ Salvando...";
+      POSTS.push(item);
+      _pendingAdds.push(item);
+      _lastJson = "";
+      renderProps();
+      resetMediaForm();
+      this.reset();
+      updateCatFields();
+      const tabBtn = document.querySelector('.tab[data-tab="' + item.cat + '"]');
+      if(tabBtn) tabBtn.click();
+      showPublish("✅ <b>" + (item.title || "Imóvel") + "</b> salvo — já aparece aqui no seu navegador!", "🚀 Abrir GitHub e publicar para todo mundo", "O GitHub abre com o arquivo <b>imoveis.json</b> pronto — só confirmar o <b>Commit changes</b>. Em ~1 minuto os visitantes veem o imóvel (com fotos e vídeos), sem atualizar nada.");
+    }catch(err){
+      alert("❌ Erro ao salvar: " + err.message);
+    }finally{
+      btn.disabled = false; btn.textContent = oldTxt;
+    }
+  });
+
+  // ===== Área restrita do proprietário (visitantes não veem nem alteram) =====
+  const ADMIN_CODE = "85754107"; // senha de acesso ao painel do proprietário (#admin)
+  // Admin vale só nesta aba/enquanto aberto: ao recarregar ou fechar, a página volta ao normal
+  let isAdmin = false;
+  function applyAdmin(){
+    document.getElementById("manageBar").hidden = !isAdmin;
+    renderProps();
+  }
+  function tryUnlock(){
+    const pw = prompt("Área restrita do proprietário 🔒\nDigite a senha de acesso:");
+    if(pw === null) return;
+    if(pw === ADMIN_CODE){
+      isAdmin = true;
+      applyAdmin();
+      document.getElementById("imoveis").scrollIntoView({behavior:"smooth"});
+      alert("Painel liberado! 🚀\nSalve o imóvel e clique em “Abrir GitHub” — sem token, sem copiar código.\nAo recarregar a página, o painel volta a ficar oculto.");
+    } else {
+      alert("Senha incorreta.");
+    }
+  }
+  function checkAdminHash(){ if(location.hash === "#admin") tryUnlock(); }
+  window.addEventListener("hashchange", checkAdminHash);
+  checkAdminHash();
+  applyAdmin();
+  loadPosts().then(renderProps);
+  // Visitantes recebem imóveis novos automaticamente (sem atualizar a página)
+  setInterval(() => { if(!document.hidden) loadPosts(); }, 90000);
+
+
+  // ===== Reveal on scroll =====
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(en => { if(en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target); }});
+  }, {threshold:.12});
+  document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+
+  function settleHashScroll(){
+    if (!location.hash || location.hash.length < 2) return;
+    let target = null;
+    try { target = document.querySelector(location.hash); } catch (err) { return; }
+    if (!target) return;
+    const jump = () => {
+      const y = target.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({ top: y, behavior: "instant" });
+    };
+    [120, 700, 1600].forEach(ms => setTimeout(jump, ms));
+  }
+  window.addEventListener("load", settleHashScroll);
+
+  /* ===== vídeos: só carregam e tocam ao clicar no play ===== */
+  document.querySelectorAll("[data-video-card]").forEach(card => {
+    const v = card.querySelector("video");
+    const btn = card.querySelector(".exp-play");
+    if (!v || !btn) return;
+    const showOverlay = () => card.classList.remove("is-playing");
+    btn.addEventListener("click", () => {
+      card.classList.add("is-playing");
+      v.play().catch(() => showOverlay());
+    });
+    v.addEventListener("play", () => card.classList.add("is-playing"));
+    v.addEventListener("pause", showOverlay);
+    v.addEventListener("ended", showOverlay);
+  });
+</script>
+</body>
+</html>
